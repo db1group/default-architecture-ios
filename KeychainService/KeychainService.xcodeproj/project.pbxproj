@@ -11,6 +11,8 @@
 		5187232223D0CF3500BE5E4D /* KeychainService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5187231823D0CF3400BE5E4D /* KeychainService.framework */; };
 		5187232723D0CF3500BE5E4D /* KeychainServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5187232623D0CF3500BE5E4D /* KeychainServiceTests.swift */; };
 		5187232923D0CF3500BE5E4D /* KeychainService.h in Headers */ = {isa = PBXBuildFile; fileRef = 5187231B23D0CF3400BE5E4D /* KeychainService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5187233323D0D2AD00BE5E4D /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5187233223D0D2AD00BE5E4D /* KeychainService.swift */; };
+		5187233523D0E23500BE5E4D /* KeychainConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5187233423D0E23500BE5E4D /* KeychainConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +34,8 @@
 		5187232123D0CF3500BE5E4D /* KeychainServiceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeychainServiceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5187232623D0CF3500BE5E4D /* KeychainServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainServiceTests.swift; sourceTree = "<group>"; };
 		5187232823D0CF3500BE5E4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5187233223D0D2AD00BE5E4D /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
+		5187233423D0E23500BE5E4D /* KeychainConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainConstants.swift; sourceTree = "<group>"; };
 		DF216DE507D751E1C7985CC5 /* Pods-KeychainService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KeychainService.debug.xcconfig"; path = "Target Support Files/Pods-KeychainService/Pods-KeychainService.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -90,6 +94,8 @@
 			children = (
 				5187231B23D0CF3400BE5E4D /* KeychainService.h */,
 				5187231C23D0CF3500BE5E4D /* Info.plist */,
+				5187233223D0D2AD00BE5E4D /* KeychainService.swift */,
+				5187233423D0E23500BE5E4D /* KeychainConstants.swift */,
 			);
 			path = KeychainService;
 			sourceTree = "<group>";
@@ -174,6 +180,7 @@
 				TargetAttributes = {
 					5187231723D0CF3400BE5E4D = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 					5187232023D0CF3500BE5E4D = {
 						CreatedOnToolsVersion = 11.3.1;
@@ -246,6 +253,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5187233323D0D2AD00BE5E4D /* KeychainService.swift in Sources */,
+				5187233523D0E23500BE5E4D /* KeychainConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,6 +401,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DF216DE507D751E1C7985CC5 /* Pods-KeychainService.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = EG955U3U64;
@@ -409,6 +419,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.db1.KeychainService;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -418,6 +429,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4A55EE1C68B012F58D1B1AAE /* Pods-KeychainService.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = EG955U3U64;
@@ -443,6 +455,7 @@
 		5187233023D0CF3500BE5E4D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EG955U3U64;
 				INFOPLIST_FILE = KeychainServiceTests/Info.plist;
@@ -461,6 +474,7 @@
 		5187233123D0CF3500BE5E4D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EG955U3U64;
 				INFOPLIST_FILE = KeychainServiceTests/Info.plist;
