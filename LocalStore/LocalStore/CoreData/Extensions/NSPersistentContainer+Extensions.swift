@@ -3,7 +3,7 @@
 //  LocalStore
 //
 //  Created by Raul.Lermen on 17/01/20.
-//  Copyright © 2020 db1. All rights reserved.
+//  Copyright © 2020 DB1. All rights reserved.
 //
 
 import Foundation
