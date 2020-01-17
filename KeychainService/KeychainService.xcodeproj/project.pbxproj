@@ -12,7 +12,15 @@
 		5187232723D0CF3500BE5E4D /* KeychainServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5187232623D0CF3500BE5E4D /* KeychainServiceTests.swift */; };
 		5187232923D0CF3500BE5E4D /* KeychainService.h in Headers */ = {isa = PBXBuildFile; fileRef = 5187231B23D0CF3400BE5E4D /* KeychainService.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5187233323D0D2AD00BE5E4D /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5187233223D0D2AD00BE5E4D /* KeychainService.swift */; };
-		5187233523D0E23500BE5E4D /* KeychainConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5187233423D0E23500BE5E4D /* KeychainConstants.swift */; };
+		5187233B23D1F33A00BE5E4D /* ClearTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5187233A23D1F33A00BE5E4D /* ClearTests.swift */; };
+		5187233D23D2120600BE5E4D /* AllKeysTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5187233C23D2120600BE5E4D /* AllKeysTests.swift */; };
+		51B6543423D2372A004CE21C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B6543323D2372A004CE21C /* AppDelegate.swift */; };
+		51B6543823D2372A004CE21C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B6543723D2372A004CE21C /* ViewController.swift */; };
+		51B6543B23D2372A004CE21C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51B6543923D2372A004CE21C /* Main.storyboard */; };
+		51B6543D23D2372D004CE21C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51B6543C23D2372D004CE21C /* Assets.xcassets */; };
+		51B6544023D2372D004CE21C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51B6543E23D2372D004CE21C /* LaunchScreen.storyboard */; };
+		51B6544823D23865004CE21C /* SetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B6544723D23865004CE21C /* SetTests.swift */; };
+		51B6544A23D23961004CE21C /* GetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B6544923D23961004CE21C /* GetTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -22,6 +30,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 5187231723D0CF3400BE5E4D;
 			remoteInfo = KeychainService;
+		};
+		51B6544523D23776004CE21C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5187230F23D0CF3400BE5E4D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 51B6543023D2372A004CE21C;
+			remoteInfo = TestHost;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -35,7 +50,17 @@
 		5187232623D0CF3500BE5E4D /* KeychainServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainServiceTests.swift; sourceTree = "<group>"; };
 		5187232823D0CF3500BE5E4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5187233223D0D2AD00BE5E4D /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
-		5187233423D0E23500BE5E4D /* KeychainConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainConstants.swift; sourceTree = "<group>"; };
+		5187233A23D1F33A00BE5E4D /* ClearTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearTests.swift; sourceTree = "<group>"; };
+		5187233C23D2120600BE5E4D /* AllKeysTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllKeysTests.swift; sourceTree = "<group>"; };
+		51B6543123D2372A004CE21C /* TestHost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestHost.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		51B6543323D2372A004CE21C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		51B6543723D2372A004CE21C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		51B6543A23D2372A004CE21C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		51B6543C23D2372D004CE21C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		51B6543F23D2372D004CE21C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		51B6544123D2372D004CE21C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51B6544723D23865004CE21C /* SetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetTests.swift; sourceTree = "<group>"; };
+		51B6544923D23961004CE21C /* GetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTests.swift; sourceTree = "<group>"; };
 		DF216DE507D751E1C7985CC5 /* Pods-KeychainService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KeychainService.debug.xcconfig"; path = "Target Support Files/Pods-KeychainService/Pods-KeychainService.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -53,6 +78,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				5187232223D0CF3500BE5E4D /* KeychainService.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51B6542E23D2372A004CE21C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +106,7 @@
 			children = (
 				5187231A23D0CF3400BE5E4D /* KeychainService */,
 				5187232523D0CF3500BE5E4D /* KeychainServiceTests */,
+				51B6543223D2372A004CE21C /* TestHost */,
 				5187231923D0CF3400BE5E4D /* Products */,
 				190D2627C08524C8FE3FAC11 /* Pods */,
 				6D4C53E36CF82E284E9122C8 /* Frameworks */,
@@ -85,6 +118,7 @@
 			children = (
 				5187231823D0CF3400BE5E4D /* KeychainService.framework */,
 				5187232123D0CF3500BE5E4D /* KeychainServiceTests.xctest */,
+				51B6543123D2372A004CE21C /* TestHost.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,7 +129,6 @@
 				5187231B23D0CF3400BE5E4D /* KeychainService.h */,
 				5187231C23D0CF3500BE5E4D /* Info.plist */,
 				5187233223D0D2AD00BE5E4D /* KeychainService.swift */,
-				5187233423D0E23500BE5E4D /* KeychainConstants.swift */,
 			);
 			path = KeychainService;
 			sourceTree = "<group>";
@@ -105,8 +138,25 @@
 			children = (
 				5187232623D0CF3500BE5E4D /* KeychainServiceTests.swift */,
 				5187232823D0CF3500BE5E4D /* Info.plist */,
+				5187233A23D1F33A00BE5E4D /* ClearTests.swift */,
+				5187233C23D2120600BE5E4D /* AllKeysTests.swift */,
+				51B6544723D23865004CE21C /* SetTests.swift */,
+				51B6544923D23961004CE21C /* GetTests.swift */,
 			);
 			path = KeychainServiceTests;
+			sourceTree = "<group>";
+		};
+		51B6543223D2372A004CE21C /* TestHost */ = {
+			isa = PBXGroup;
+			children = (
+				51B6543323D2372A004CE21C /* AppDelegate.swift */,
+				51B6543723D2372A004CE21C /* ViewController.swift */,
+				51B6543923D2372A004CE21C /* Main.storyboard */,
+				51B6543C23D2372D004CE21C /* Assets.xcassets */,
+				51B6543E23D2372D004CE21C /* LaunchScreen.storyboard */,
+				51B6544123D2372D004CE21C /* Info.plist */,
+			);
+			path = TestHost;
 			sourceTree = "<group>";
 		};
 		6D4C53E36CF82E284E9122C8 /* Frameworks */ = {
@@ -162,11 +212,29 @@
 			);
 			dependencies = (
 				5187232423D0CF3500BE5E4D /* PBXTargetDependency */,
+				51B6544623D23776004CE21C /* PBXTargetDependency */,
 			);
 			name = KeychainServiceTests;
 			productName = KeychainServiceTests;
 			productReference = 5187232123D0CF3500BE5E4D /* KeychainServiceTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		51B6543023D2372A004CE21C /* TestHost */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 51B6544223D2372D004CE21C /* Build configuration list for PBXNativeTarget "TestHost" */;
+			buildPhases = (
+				51B6542D23D2372A004CE21C /* Sources */,
+				51B6542E23D2372A004CE21C /* Frameworks */,
+				51B6542F23D2372A004CE21C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestHost;
+			productName = TestHost;
+			productReference = 51B6543123D2372A004CE21C /* TestHost.app */;
+			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
@@ -183,6 +251,10 @@
 						LastSwiftMigration = 1130;
 					};
 					5187232023D0CF3500BE5E4D = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 51B6543023D2372A004CE21C;
+					};
+					51B6543023D2372A004CE21C = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
 				};
@@ -202,6 +274,7 @@
 			targets = (
 				5187231723D0CF3400BE5E4D /* KeychainService */,
 				5187232023D0CF3500BE5E4D /* KeychainServiceTests */,
+				51B6543023D2372A004CE21C /* TestHost */,
 			);
 		};
 /* End PBXProject section */
@@ -218,6 +291,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51B6542F23D2372A004CE21C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51B6544023D2372D004CE21C /* LaunchScreen.storyboard in Resources */,
+				51B6543D23D2372D004CE21C /* Assets.xcassets in Resources */,
+				51B6543B23D2372A004CE21C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,7 +337,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5187233323D0D2AD00BE5E4D /* KeychainService.swift in Sources */,
-				5187233523D0E23500BE5E4D /* KeychainConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,7 +344,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51B6544A23D23961004CE21C /* GetTests.swift in Sources */,
+				51B6544823D23865004CE21C /* SetTests.swift in Sources */,
 				5187232723D0CF3500BE5E4D /* KeychainServiceTests.swift in Sources */,
+				5187233D23D2120600BE5E4D /* AllKeysTests.swift in Sources */,
+				5187233B23D1F33A00BE5E4D /* ClearTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51B6542D23D2372A004CE21C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51B6543823D2372A004CE21C /* ViewController.swift in Sources */,
+				51B6543423D2372A004CE21C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,7 +369,31 @@
 			target = 5187231723D0CF3400BE5E4D /* KeychainService */;
 			targetProxy = 5187232323D0CF3500BE5E4D /* PBXContainerItemProxy */;
 		};
+		51B6544623D23776004CE21C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 51B6543023D2372A004CE21C /* TestHost */;
+			targetProxy = 51B6544523D23776004CE21C /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		51B6543923D2372A004CE21C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				51B6543A23D2372A004CE21C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		51B6543E23D2372D004CE21C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				51B6543F23D2372D004CE21C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		5187232A23D0CF3500BE5E4D /* Debug */ = {
@@ -468,6 +587,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestHost.app/TestHost";
 			};
 			name = Debug;
 		};
@@ -484,6 +604,45 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.db1.KeychainServiceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestHost.app/TestHost";
+			};
+			name = Release;
+		};
+		51B6544323D2372D004CE21C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EG955U3U64;
+				INFOPLIST_FILE = TestHost/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.db1.TestHost;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		51B6544423D2372D004CE21C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EG955U3U64;
+				INFOPLIST_FILE = TestHost/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.db1.TestHost;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -516,6 +675,15 @@
 			buildConfigurations = (
 				5187233023D0CF3500BE5E4D /* Debug */,
 				5187233123D0CF3500BE5E4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		51B6544223D2372D004CE21C /* Build configuration list for PBXNativeTarget "TestHost" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				51B6544323D2372D004CE21C /* Debug */,
+				51B6544423D2372D004CE21C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -6,15 +6,15 @@
 //  Copyright © 2020 Glauco Dantas Beserra . All rights reserved.
 //
 
+import Security
 import Foundation
 
 open class KeychainService {
+    
     /**
      
      Specifies whether the items can be synchronized with other devices through iCloud. Setting this property to true will
      add the item to other devices with the `set` method and obtain synchronizable items with the `get` command. Deleting synchronizable items will remove them from all devices. In order for keychain synchronization to work the user must enable "Keychain" in iCloud settings.
-     
-     Does not work on macOS.
      
      */
     open var synchronizable: Bool = false
@@ -31,61 +31,26 @@ open class KeychainService {
      - returns: An string array with all keys from the keychain.
      
      */
-    
-//    public var allKeys: [String] {
-//        var query = [String : Any]()
-//
-//        query[kSecClass as String] = kSecClassGenericPassword
-//        query[kSecReturnData as String] = true
-////        KeychainSwiftConstants.returnData : true,
-//        query[kSecReturnAttributes as String] = true
-////        KeychainSwiftConstants.returnAttributes: true,
-//        query[kSecReturnPersistentRef as String] = true
-////        KeychainSwiftConstants.returnReference: true,
-//        query[kSecMatchLimit as String] = kSecMatchLimitAll
-////        KeychainSwiftConstants.matchLimit: KeychainSwiftConstants.secMatchLimitAll
-//
-////        query = addAccessGroupWhenPresent(query)
-////        query = addSynchronizableIfRequired(query, addingItems: false)
-//
-//        var result: AnyObject?
-//
-//        let isSuccessfulExecution = withUnsafeMutablePointer(to: &result) {
-//            SecItemCopyMatching(query as CFDictionary, UnsafeMutablePointer($0))
-//        }
-//
-//        if isSuccessfulExecution == noErr {
-//            return (result as? [[String: Any]])?.compactMap {
-//                $0[kSecClass as String] as? String } ?? []
-//        }
-//
-//        return []
-//    }
-    
     public var allKeys: [String] {
-        let query: [String: Any] = [
-        kSecClass as String : kSecClassGenericPassword,
-        kSecReturnData as String : true,
-        kSecReturnAttributes as String: true,
-        kSecReturnPersistentRef as String: true,
-        kSecMatchLimit as String: kSecMatchLimitAll
-      ]
-    
-//      query = addAccessGroupWhenPresent(query)
-//      query = addSynchronizableIfRequired(query, addingItems: false)
-
-      var result: AnyObject?
-
-      let isSuccessfulExecution = withUnsafeMutablePointer(to: &result) {
-        SecItemCopyMatching(query as CFDictionary, UnsafeMutablePointer($0))
-      }
-      
-      if isSuccessfulExecution == noErr {
-        return (result as? [[String: Any]])?.compactMap {
-          $0[kSecAttrAccount as String] as? String } ?? []
-      }
-      
-      return []
+        var query = [String:Any]()
+        query[kSecClass as String] = kSecClassGenericPassword
+        query[kSecReturnData as String] = true
+        query[kSecReturnAttributes as String] = true
+        query[kSecReturnPersistentRef as String] = true
+        query[kSecMatchLimit as String] = kSecMatchLimitAll
+        
+        var result: AnyObject?
+        
+        let isSuccessfulExecution = withUnsafeMutablePointer(to: &result) {
+            SecItemCopyMatching(query as CFDictionary, UnsafeMutablePointer($0))
+        }
+        
+        if isSuccessfulExecution == noErr {
+            return (result as? [[String: Any]])?.compactMap {
+                $0[kSecAttrAccount as String] as? String } ?? []
+        }
+        
+        return []
     }
     
     /**
@@ -133,13 +98,70 @@ open class KeychainService {
         query[kSecAttrAccount as String] = key
         query[kSecValueData as String] = value
         
-        
-        //        query = addAccessGroupWhenPresent(query)
-        //        query = addSynchronizableIfRequired(query, addingItems: true)
-        
         let isSuccessfulExecution = SecItemAdd(query as CFDictionary, nil) == noErr
         
         return isSuccessfulExecution
+    }
+    
+    /**
+     
+     Retrieves the text value from the keychain that corresponds to the given key.
+     
+     - parameter key: The key that is used to read the keychain item.
+     - returns: The text value from the keychain. Returns nil if unable to read the item.
+     
+     */
+    open func get(_ key: String) -> String? {
+        guard let data = getData(key) else { return nil }
+        guard let currentString = String(data: data, encoding: .utf8) else { return nil }
+        
+        return currentString
+    }
+    
+    /**
+     
+     Retrieves the data from the keychain that corresponds to the given key.
+     
+     - parameter key: The key that is used to read the keychain item.
+     - returns: The text value from the keychain. Returns nil if unable to read the item.
+     
+     */
+    open func getData(_ key: String) -> Data? {
+        
+        lock.lock()
+        defer { lock.unlock() }
+        
+        var query = [String : Any]()
+        
+        query[kSecClass as String] = kSecClassGenericPassword
+        query[kSecAttrAccount as String] = key
+        query[kSecMatchLimit as String] = kSecMatchLimitOne
+        query[kSecReturnData as String] =  kCFBooleanTrue
+        
+        var result: AnyObject?
+        
+        let isSuccessfulExecution = withUnsafeMutablePointer(to: &result) {
+            SecItemCopyMatching(query as CFDictionary, UnsafeMutablePointer($0))
+        }
+        
+        guard isSuccessfulExecution == noErr else { return nil }
+        return result as? Data
+    }
+    
+    /**
+     Deletes the single keychain item specified by the key.
+     
+     - parameter key: The key that is used to delete the keychain item.
+     - returns: True if the item was successfully deleted.
+     
+     */
+    @discardableResult
+    open func delete(_ key: String) -> Bool {
+        
+        lock.lock()
+        defer { lock.unlock() }
+        
+        return deleteNoLock(key)
     }
     
     
@@ -152,23 +174,23 @@ open class KeychainService {
      */
     @discardableResult
     open func clear() -> Bool {
-        
+
         lock.lock()
         defer { lock.unlock() }
-        
+
         var query = [String : Any]()
-        
+
         query[kSecClass as String] = kSecClassGenericPassword
-        //        query = addAccessGroupWhenPresent(query)
-        //        query = addSynchronizableIfRequired(query, addingItems: false)
-        
-        let isSuccessfulExecution = SecItemDelete(query as CFDictionary) == noErr
-        
+
+        let status = SecItemDelete(query as CFDictionary)
+        let isSuccessfulExecution = status == noErr || status == errSecItemNotFound
+
         return isSuccessfulExecution
     }
     
 }
 
+// MARK: - Auxiliary methods
 
 extension KeychainService {
     /**
@@ -180,18 +202,16 @@ extension KeychainService {
      
      */
     @discardableResult
-    func deleteNoLock(_ key: String) -> Bool {
+    private func deleteNoLock(_ key: String) -> Bool {
         
         var query = [String : Any]()
         
         query[kSecClass as String] = kSecClassGenericPassword
         query[kSecAttrAccount as String] = key
         
-        //        query = addAccessGroupWhenPresent(query)
-        //        query = addSynchronizableIfRequired(query, addingItems: false)
-        
         let isSuccessfulExecution = SecItemDelete(query as CFDictionary) == noErr
         
         return isSuccessfulExecution
     }
+    
 }
