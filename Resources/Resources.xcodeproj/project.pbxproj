@@ -27,6 +27,7 @@
 		3E2C93C223D0ED49000B082E /* NSError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2C93C123D0ED49000B082E /* NSError.swift */; };
 		3E2C93C423D0EDA6000B082E /* InputFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2C93C323D0EDA6000B082E /* InputFormatter.swift */; };
 		3E2C93C623D1E5B6000B082E /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2C93C523D1E5B6000B082E /* Dictionary.swift */; };
+		3E2C93C823D1F9BD000B082E /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2C93C723D1F9BD000B082E /* UIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		3E2C93C123D0ED49000B082E /* NSError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSError.swift; sourceTree = "<group>"; };
 		3E2C93C323D0EDA6000B082E /* InputFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputFormatter.swift; sourceTree = "<group>"; };
 		3E2C93C523D1E5B6000B082E /* Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
+		3E2C93C723D1F9BD000B082E /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +177,7 @@
 				3E2C93BF23D0ED00000B082E /* UITextField+NextResponder.swift */,
 				3E2C93C123D0ED49000B082E /* NSError.swift */,
 				3E2C93C523D1E5B6000B082E /* Dictionary.swift */,
+				3E2C93C723D1F9BD000B082E /* UIView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -335,6 +338,7 @@
 				3E2C93C423D0EDA6000B082E /* InputFormatter.swift in Sources */,
 				3E2C93B623D0CE8D000B082E /* UIFont+Customize.swift in Sources */,
 				3E2C93B423D0CE59000B082E /* UIColor+Customize.swift in Sources */,
+				3E2C93C823D1F9BD000B082E /* UIView.swift in Sources */,
 				3E2C93C623D1E5B6000B082E /* Dictionary.swift in Sources */,
 				3E2C937C23D0CD66000B082E /* AppDelegate.swift in Sources */,
 				3E2C93BE23D0EC91000B082E /* String.swift in Sources */,
