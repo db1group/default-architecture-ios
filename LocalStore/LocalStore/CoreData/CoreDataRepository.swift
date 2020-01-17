@@ -79,6 +79,22 @@ public class CoreDataRepository {
             return false
         }
     }
+    
+    @discardableResult
+    public static func deleteAll<T: NSManagedObject>(type: T.Type) -> Bool {
+        if !T.containsKey(key: "id") { return false }
+        let request = NSFetchRequest<NSFetchRequestResult>(entityName: T.entityName)
+        
+        do {
+            guard let result = try CoreDataManager.shared.context.fetch(request) as? [NSManagedObject] else { return false }
+            for item in result {
+                CoreDataManager.shared.context.delete(item)
+            }
+            return save()
+        } catch {
+            return false
+        }
+    }
 
     @discardableResult
     public static func save() -> Bool {

@@ -18,17 +18,71 @@ class LocalStoreTests: XCTestCase {
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
-
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    
+    func testCreateAsset() {
+        CoreDataRepository.deleteAll(type: Article.self)
+        
+        let newId: Int = 1
+        if let article = CoreDataRepository.create(new: Article.self) {
+            article.id = Int16(newId)
+            article.title = "Title"
+            article.subtitle = "Subtitle"
+            CoreDataRepository.save()
         }
+        
+        let created = CoreDataRepository.find(type: Article.self, id: newId)
+        XCTAssertNotNil(created)
     }
+    
+    func testListAssets() {
+        CoreDataRepository.deleteAll(type: Article.self)
+        
+        let total = 3
+        for i in 0..<total {
+            if let article = CoreDataRepository.create(new: Article.self) {
+                article.id = Int16(i)
+                article.title = "Title"
+                article.subtitle = "Subtitle"
+                CoreDataRepository.save()
+            }
+        }
+        
+        let totalInserted = CoreDataRepository.list(type: Article.self)?.count
+        XCTAssertEqual(totalInserted, total)
+    }
+    
+    func testFindAsset() {
+        CoreDataRepository.deleteAll(type: Article.self)
+        
+        let newId: Int = 1
+        if let article = CoreDataRepository.create(new: Article.self) {
+            article.id = Int16(newId)
+            article.title = "titulo teste"
+            article.subtitle = "subtitulo teste"
+            CoreDataRepository.save()
+            
+            let found = CoreDataRepository.find(type: Article.self, id: newId)
+            XCTAssertEqual(found, article)
+            return
+        }
+        
+        XCTFail("Erro ao criar item")
+    }
+    
+    func testDeleteAsset() {
+        CoreDataRepository.deleteAll(type: Article.self)
+        
+        let newId: Int = 1
+        if let article = CoreDataRepository.create(new: Article.self) {
+            article.id = Int16(newId)
+            article.title = "Title"
+            article.subtitle = "Subtitle"
+            CoreDataRepository.save()
+        }
+        
+        let deleted = CoreDataRepository.delete(type: Article.self, id: newId)
+        XCTAssertTrue(deleted)
+    }
+
 
 }
