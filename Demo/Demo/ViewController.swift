@@ -17,8 +17,7 @@ class ViewController: UIViewController {
     
     func coreDataExample() {
         
-        //MARK - Create article
-        
+        //Create article
         if let article = CoreDataRepository.create(new: Article.self) {
             article.id = 1
             article.title = "Title"
@@ -26,17 +25,17 @@ class ViewController: UIViewController {
             CoreDataRepository.save()
         }
         
-        //MARK - List Articles
+        //List Articles
         if let result = CoreDataRepository.list(type: Article.self) {
             print(result.map({ $0.title }))
         }
         
-        //MARK - Find article
+        //Find article
         if let article = CoreDataRepository.find(type: Article.self, id: 1) {
             print(article)
         }
         
-        //MARK - Delete article
+        //Delete article
         let result: Bool = CoreDataRepository.delete(type: Article.self, id: 1)
         print(result)
     }
