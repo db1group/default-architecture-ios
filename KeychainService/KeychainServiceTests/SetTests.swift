@@ -30,4 +30,15 @@ class SetTests: XCTestCase {
         XCTAssertEqual(allKeys.count, 3)
     }
     
+    func testSetData() {
+        let data = "primeiro".data(using: .utf8)!
+        XCTAssertTrue(obj.set(data, forKey: "first"))
+        
+        let dataResult = obj.getData("first")!
+        XCTAssertNotNil(dataResult)
+ 
+        let decodedData = String(data: dataResult, encoding: .utf8)!
+        XCTAssertEqual(decodedData, "primeiro")
+    }
+    
 }

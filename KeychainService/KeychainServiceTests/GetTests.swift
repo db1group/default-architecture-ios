@@ -36,5 +36,22 @@ class GetTests: XCTestCase {
         XCTAssertEqual(second, "segundo")
         XCTAssertEqual(third, "terceiro")
     }
+    
+    func testGetData() {
+        XCTAssertTrue(obj.clear())
+        XCTAssertEqual(obj.allKeys, [])
+        
+        var dataResult = obj.getData("second")
+        XCTAssertNil(dataResult)
+        
+        let data = "segundo".data(using: .utf8)!
+        XCTAssertTrue(obj.set(data, forKey: "second"))
+        
+        dataResult = obj.getData("second")
+        XCTAssertNotNil(dataResult)
+        
+        let decodedData = String(data: dataResult!, encoding: .utf8)!
+        XCTAssertEqual(decodedData, "segundo")
+    }
 
 }

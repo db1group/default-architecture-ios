@@ -11,19 +11,11 @@ import Foundation
 
 open class KeychainService {
     
-    /**
-     
-     Specifies whether the items can be synchronized with other devices through iCloud. Setting this property to true will
-     add the item to other devices with the `set` method and obtain synchronizable items with the `get` command. Deleting synchronizable items will remove them from all devices. In order for keychain synchronization to work the user must enable "Keychain" in iCloud settings.
-     
-     */
-    open var synchronizable: Bool = false
+    public init() { }
     
     // The lock prevents the code to be run simultaneously
     // from multiple threads which may result in crashing
     private let lock = NSLock()
-    
-    public init() { }
     
     /**
      Return all keys from keychain
@@ -174,17 +166,17 @@ open class KeychainService {
      */
     @discardableResult
     open func clear() -> Bool {
-
+        
         lock.lock()
         defer { lock.unlock() }
-
+        
         var query = [String : Any]()
-
+        
         query[kSecClass as String] = kSecClassGenericPassword
-
+        
         let status = SecItemDelete(query as CFDictionary)
         let isSuccessfulExecution = status == noErr || status == errSecItemNotFound
-
+        
         return isSuccessfulExecution
     }
     

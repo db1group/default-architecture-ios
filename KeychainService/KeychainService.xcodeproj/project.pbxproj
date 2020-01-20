@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		3CEBCD6C8648F505E8E13AFC /* libPods-KeychainService.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D8529B8311A87EF98B22CE5 /* libPods-KeychainService.a */; };
+		51237BAA23D5CE050045B7B4 /* DeleteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51237BA923D5CE050045B7B4 /* DeleteTests.swift */; };
 		5187232223D0CF3500BE5E4D /* KeychainService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5187231823D0CF3400BE5E4D /* KeychainService.framework */; };
 		5187232723D0CF3500BE5E4D /* KeychainServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5187232623D0CF3500BE5E4D /* KeychainServiceTests.swift */; };
 		5187232923D0CF3500BE5E4D /* KeychainService.h in Headers */ = {isa = PBXBuildFile; fileRef = 5187231B23D0CF3400BE5E4D /* KeychainService.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5187233323D0D2AD00BE5E4D /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5187233223D0D2AD00BE5E4D /* KeychainService.swift */; };
-		5187233B23D1F33A00BE5E4D /* ClearTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5187233A23D1F33A00BE5E4D /* ClearTests.swift */; };
 		5187233D23D2120600BE5E4D /* AllKeysTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5187233C23D2120600BE5E4D /* AllKeysTests.swift */; };
 		51B6543423D2372A004CE21C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B6543323D2372A004CE21C /* AppDelegate.swift */; };
 		51B6543823D2372A004CE21C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B6543723D2372A004CE21C /* ViewController.swift */; };
@@ -43,6 +43,7 @@
 /* Begin PBXFileReference section */
 		3D8529B8311A87EF98B22CE5 /* libPods-KeychainService.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KeychainService.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A55EE1C68B012F58D1B1AAE /* Pods-KeychainService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KeychainService.release.xcconfig"; path = "Target Support Files/Pods-KeychainService/Pods-KeychainService.release.xcconfig"; sourceTree = "<group>"; };
+		51237BA923D5CE050045B7B4 /* DeleteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteTests.swift; sourceTree = "<group>"; };
 		5187231823D0CF3400BE5E4D /* KeychainService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KeychainService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5187231B23D0CF3400BE5E4D /* KeychainService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeychainService.h; sourceTree = "<group>"; };
 		5187231C23D0CF3500BE5E4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -50,7 +51,6 @@
 		5187232623D0CF3500BE5E4D /* KeychainServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainServiceTests.swift; sourceTree = "<group>"; };
 		5187232823D0CF3500BE5E4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5187233223D0D2AD00BE5E4D /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
-		5187233A23D1F33A00BE5E4D /* ClearTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearTests.swift; sourceTree = "<group>"; };
 		5187233C23D2120600BE5E4D /* AllKeysTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllKeysTests.swift; sourceTree = "<group>"; };
 		51B6543123D2372A004CE21C /* TestHost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestHost.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51B6543323D2372A004CE21C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -138,10 +138,10 @@
 			children = (
 				5187232623D0CF3500BE5E4D /* KeychainServiceTests.swift */,
 				5187232823D0CF3500BE5E4D /* Info.plist */,
-				5187233A23D1F33A00BE5E4D /* ClearTests.swift */,
 				5187233C23D2120600BE5E4D /* AllKeysTests.swift */,
 				51B6544723D23865004CE21C /* SetTests.swift */,
 				51B6544923D23961004CE21C /* GetTests.swift */,
+				51237BA923D5CE050045B7B4 /* DeleteTests.swift */,
 			);
 			path = KeychainServiceTests;
 			sourceTree = "<group>";
@@ -346,9 +346,9 @@
 			files = (
 				51B6544A23D23961004CE21C /* GetTests.swift in Sources */,
 				51B6544823D23865004CE21C /* SetTests.swift in Sources */,
+				51237BAA23D5CE050045B7B4 /* DeleteTests.swift in Sources */,
 				5187232723D0CF3500BE5E4D /* KeychainServiceTests.swift in Sources */,
 				5187233D23D2120600BE5E4D /* AllKeysTests.swift in Sources */,
-				5187233B23D1F33A00BE5E4D /* ClearTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
