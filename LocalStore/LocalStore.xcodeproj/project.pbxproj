@@ -16,7 +16,7 @@
 		1220C36A23D2003700B019D6 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1220C36523D2003700B019D6 /* Model.xcdatamodeld */; };
 		1220C37123D2042B00B019D6 /* NSPersistentContainer+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1220C37023D2042B00B019D6 /* NSPersistentContainer+Extensions.swift */; };
 		874C2975601F45EDAFAB1716 /* libPods-LocalStore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58CB751068082B31E8A578FF /* libPods-LocalStore.a */; };
-		C393A2949A4A3D6F4ACE7056 /* libPods-LocalStore-LocalStoreTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FE769CB2800540BAE71B19A3 /* libPods-LocalStore-LocalStoreTests.a */; };
+		F0A64F64FBC9A7E90857EF70 /* libPods-LocalStoreTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7791A4F3DA3195B3EBB2D3C7 /* libPods-LocalStoreTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,11 +42,13 @@
 		1220C36423D2003700B019D6 /* NSManagedObject+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSManagedObject+Extensions.swift"; path = "../NSManagedObject+Extensions.swift"; sourceTree = "<group>"; };
 		1220C36623D2003700B019D6 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		1220C37023D2042B00B019D6 /* NSPersistentContainer+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSPersistentContainer+Extensions.swift"; sourceTree = "<group>"; };
+		21398BB389D9F380849A4EAF /* Pods-LocalStoreTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocalStoreTests.release.xcconfig"; path = "Target Support Files/Pods-LocalStoreTests/Pods-LocalStoreTests.release.xcconfig"; sourceTree = "<group>"; };
 		58CB751068082B31E8A578FF /* libPods-LocalStore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LocalStore.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7791A4F3DA3195B3EBB2D3C7 /* libPods-LocalStoreTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LocalStoreTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FC2E9E4AB2934FA005BCA7F /* Pods-LocalStoreTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocalStoreTests.debug.xcconfig"; path = "Target Support Files/Pods-LocalStoreTests/Pods-LocalStoreTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F2AE45579D2798BAED571D38 /* Pods-LocalStore-LocalStoreTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocalStore-LocalStoreTests.release.xcconfig"; path = "Target Support Files/Pods-LocalStore-LocalStoreTests/Pods-LocalStore-LocalStoreTests.release.xcconfig"; sourceTree = "<group>"; };
 		F3868A4638E398F9AEF54967 /* Pods-LocalStore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocalStore.debug.xcconfig"; path = "Target Support Files/Pods-LocalStore/Pods-LocalStore.debug.xcconfig"; sourceTree = "<group>"; };
 		FABD281CB7B87018407A529B /* Pods-LocalStore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocalStore.release.xcconfig"; path = "Target Support Files/Pods-LocalStore/Pods-LocalStore.release.xcconfig"; sourceTree = "<group>"; };
-		FE769CB2800540BAE71B19A3 /* libPods-LocalStore-LocalStoreTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LocalStore-LocalStoreTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +65,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1220C35123D1FFB500B019D6 /* LocalStore.framework in Frameworks */,
-				C393A2949A4A3D6F4ACE7056 /* libPods-LocalStore-LocalStoreTests.a in Frameworks */,
+				F0A64F64FBC9A7E90857EF70 /* libPods-LocalStoreTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,6 +138,8 @@
 				FABD281CB7B87018407A529B /* Pods-LocalStore.release.xcconfig */,
 				05F9E774BA9362169B3F26C3 /* Pods-LocalStore-LocalStoreTests.debug.xcconfig */,
 				F2AE45579D2798BAED571D38 /* Pods-LocalStore-LocalStoreTests.release.xcconfig */,
+				8FC2E9E4AB2934FA005BCA7F /* Pods-LocalStoreTests.debug.xcconfig */,
+				21398BB389D9F380849A4EAF /* Pods-LocalStoreTests.release.xcconfig */,
 			);
 			name = Pods;
 			path = ../Pods;
@@ -145,7 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				58CB751068082B31E8A578FF /* libPods-LocalStore.a */,
-				FE769CB2800540BAE71B19A3 /* libPods-LocalStore-LocalStoreTests.a */,
+				7791A4F3DA3195B3EBB2D3C7 /* libPods-LocalStoreTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -272,7 +276,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-LocalStore-LocalStoreTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-LocalStoreTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -507,7 +511,7 @@
 		};
 		1220C35F23D1FFB500B019D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 05F9E774BA9362169B3F26C3 /* Pods-LocalStore-LocalStoreTests.debug.xcconfig */;
+			baseConfigurationReference = 8FC2E9E4AB2934FA005BCA7F /* Pods-LocalStoreTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -526,7 +530,7 @@
 		};
 		1220C36023D1FFB500B019D6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F2AE45579D2798BAED571D38 /* Pods-LocalStore-LocalStoreTests.release.xcconfig */;
+			baseConfigurationReference = 21398BB389D9F380849A4EAF /* Pods-LocalStoreTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
