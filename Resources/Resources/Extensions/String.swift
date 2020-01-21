@@ -171,9 +171,4 @@ extension String {
     func toBase64() -> String {
         return Data(self.utf8).base64EncodedString()
     }
-
-    var isPassword: Bool {
-        guard self.count == 6 else { return false }
-        return true
-    }
 }
