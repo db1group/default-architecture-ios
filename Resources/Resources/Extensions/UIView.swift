@@ -82,5 +82,32 @@ extension UIView {
         layer.addSublayer(shapeLayer)
     }
 
+    /*
+     * This methods returns a Snapshot of this UIView
+     */
+    func getSnapshotImage() -> UIImage {
+        UIGraphicsBeginImageContextWithOptions(bounds.size, isOpaque, 0)
+        drawHierarchy(in: bounds, afterScreenUpdates: false)
+        let snapshotImage = UIGraphicsGetImageFromCurrentImageContext()!
+        UIGraphicsEndImageContext()
+        return snapshotImage
+    }
+
+    func roundCorners(corners: UIRectCorner, radius: CGFloat) {
+        let path = UIBezierPath(roundedRect: bounds, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
+        let mask = CAShapeLayer()
+        mask.path = path.cgPath
+        layer.mask = mask
+    }
+
+    func simpleBorder (width: CGFloat, color: UIColor) {
+        self.layer.borderColor = color.cgColor
+        self.layer.borderWidth = width
+    }
+
+    func circle () {
+        self.layer.cornerRadius = self.frame.size.width/2
+        self.clipsToBounds = true
+    }
 }
 
