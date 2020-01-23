@@ -76,6 +76,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		518B0C7B23D9B6C10007B1AE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				51C5D12923D64410002AF322 /* Coordinator.swift */,
+				51C5D12D23D730AC002AF322 /* Storyboarded.swift */,
+				51C5D12F23D73353002AF322 /* UIViewController+.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		518B0C7C23D9B6DA0007B1AE /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				51C5D12B23D6453E002AF322 /* MainCoordinator.swift */,
+				518B0C7923D8CBE80007B1AE /* SecondCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
 		51C5D0F723D64182002AF322 = {
 			isa = PBXGroup;
 			children = (
@@ -97,19 +116,16 @@
 		51C5D10223D64182002AF322 /* CoordinatorService */ = {
 			isa = PBXGroup;
 			children = (
+				518B0C7B23D9B6C10007B1AE /* Resources */,
+				518B0C7C23D9B6DA0007B1AE /* Coordinators */,
+				51E7EC8823D797F6001B4DDB /* MainViewController */,
+				51E7EC8623D797A1001B4DDB /* TestAViewController */,
+				51E7EC8723D797AF001B4DDB /* TestBViewController */,
 				51C5D10323D64182002AF322 /* AppDelegate.swift */,
 				51C5D10523D64182002AF322 /* SceneDelegate.swift */,
-				51E7EC8823D797F6001B4DDB /* MainViewController */,
 				51C5D10C23D64186002AF322 /* Assets.xcassets */,
 				51C5D10E23D64186002AF322 /* LaunchScreen.storyboard */,
 				51C5D11123D64186002AF322 /* Info.plist */,
-				51C5D12923D64410002AF322 /* Coordinator.swift */,
-				51C5D12B23D6453E002AF322 /* MainCoordinator.swift */,
-				518B0C7923D8CBE80007B1AE /* SecondCoordinator.swift */,
-				51C5D12D23D730AC002AF322 /* Storyboarded.swift */,
-				51C5D12F23D73353002AF322 /* UIViewController+.swift */,
-				51E7EC8623D797A1001B4DDB /* TestAViewController */,
-				51E7EC8723D797AF001B4DDB /* TestBViewController */,
 			);
 			path = CoordinatorService;
 			sourceTree = "<group>";
@@ -144,8 +160,8 @@
 		51E7EC8823D797F6001B4DDB /* MainViewController */ = {
 			isa = PBXGroup;
 			children = (
-				518B0C7523D8BE810007B1AE /* ViewController.storyboard */,
 				51C5D10723D64182002AF322 /* ViewController.swift */,
+				518B0C7523D8BE810007B1AE /* ViewController.storyboard */,
 			);
 			path = MainViewController;
 			sourceTree = "<group>";
