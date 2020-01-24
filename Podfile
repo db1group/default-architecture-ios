@@ -28,6 +28,11 @@ target 'Networking' do
   end
 end
 
+target 'Resources' do
+	platform :ios, '13.0'
+	project 'Resources/Resources.xcodeproj'
+end
+
 target 'KeychainService' do
 	platform :ios, '11.0'
 	project 'KeychainService/KeychainService.xcodeproj'
