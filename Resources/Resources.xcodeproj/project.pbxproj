@@ -29,6 +29,15 @@
 		3E2C93C623D1E5B6000B082E /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2C93C523D1E5B6000B082E /* Dictionary.swift */; };
 		3E2C93C823D1F9BD000B082E /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2C93C723D1F9BD000B082E /* UIView.swift */; };
 		3E2C93CD23D23732000B082E /* StringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2C93CC23D23732000B082E /* StringTests.swift */; };
+		3E611B1A23D76332008AD729 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E611B1923D76332008AD729 /* UIImage.swift */; };
+		3E611B1C23D86C8D008AD729 /* UIView+Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E611B1B23D86C8C008AD729 /* UIView+Shadow.swift */; };
+		3E611B1E23D86CDE008AD729 /* UIAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E611B1D23D86CDE008AD729 /* UIAlertController.swift */; };
+		3E611B2023D86D4A008AD729 /* UIFont+Bold.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E611B1F23D86D4A008AD729 /* UIFont+Bold.swift */; };
+		3E611B2223D86D84008AD729 /* UIView+Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E611B2123D86D84008AD729 /* UIView+Gradient.swift */; };
+		3E611B2523D86E85008AD729 /* ErrorHandleable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E611B2423D86E85008AD729 /* ErrorHandleable.swift */; };
+		3E611B2723D86F0B008AD729 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E611B2623D86F0B008AD729 /* Strings.swift */; };
+		3E611B2923D8704A008AD729 /* UIView+Round+Anchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E611B2823D8704A008AD729 /* UIView+Round+Anchor.swift */; };
+		3E611B2C23D870DE008AD729 /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E611B2B23D870DE008AD729 /* BorderedButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +86,16 @@
 		3E2C93C523D1E5B6000B082E /* Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
 		3E2C93C723D1F9BD000B082E /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		3E2C93CC23D23732000B082E /* StringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringTests.swift; sourceTree = "<group>"; };
+		3E611B1923D76332008AD729 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		3E611B1B23D86C8C008AD729 /* UIView+Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Shadow.swift"; sourceTree = "<group>"; };
+		3E611B1D23D86CDE008AD729 /* UIAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertController.swift; sourceTree = "<group>"; };
+		3E611B1F23D86D4A008AD729 /* UIFont+Bold.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Bold.swift"; sourceTree = "<group>"; };
+		3E611B2123D86D84008AD729 /* UIView+Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Gradient.swift"; sourceTree = "<group>"; };
+		3E611B2423D86E85008AD729 /* ErrorHandleable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandleable.swift; sourceTree = "<group>"; };
+		3E611B2623D86F0B008AD729 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		3E611B2823D8704A008AD729 /* UIView+Round+Anchor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Round+Anchor.swift"; sourceTree = "<group>"; };
+		3E611B2B23D870DE008AD729 /* BorderedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedButton.swift; sourceTree = "<group>"; };
+		3E611B2D23D8743C008AD729 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +146,8 @@
 		3E2C937A23D0CD66000B082E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				3E611B2A23D870BA008AD729 /* Custom Components */,
+				3E611B2323D86E6A008AD729 /* Error */,
 				3E2C93BA23D0D10E000B082E /* Others */,
 				3E2C93B723D0CEC9000B082E /* Resources */,
 				3E2C93B223D0CE35000B082E /* Extensions */,
@@ -181,6 +202,12 @@
 				3E2C93C123D0ED49000B082E /* NSError.swift */,
 				3E2C93C523D1E5B6000B082E /* Dictionary.swift */,
 				3E2C93C723D1F9BD000B082E /* UIView.swift */,
+				3E611B1923D76332008AD729 /* UIImage.swift */,
+				3E611B1B23D86C8C008AD729 /* UIView+Shadow.swift */,
+				3E611B1D23D86CDE008AD729 /* UIAlertController.swift */,
+				3E611B1F23D86D4A008AD729 /* UIFont+Bold.swift */,
+				3E611B2123D86D84008AD729 /* UIView+Gradient.swift */,
+				3E611B2823D8704A008AD729 /* UIView+Round+Anchor.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -189,6 +216,8 @@
 			isa = PBXGroup;
 			children = (
 				3E2C93B823D0CEFD000B082E /* Colors.xcassets */,
+				3E611B2623D86F0B008AD729 /* Strings.swift */,
+				3E611B2D23D8743C008AD729 /* Localizable.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -208,6 +237,22 @@
 				3E2C93CC23D23732000B082E /* StringTests.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3E611B2323D86E6A008AD729 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				3E611B2423D86E85008AD729 /* ErrorHandleable.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		3E611B2A23D870BA008AD729 /* Custom Components */ = {
+			isa = PBXGroup;
+			children = (
+				3E611B2B23D870DE008AD729 /* BorderedButton.swift */,
+			);
+			path = "Custom Components";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -345,18 +390,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E611B1C23D86C8D008AD729 /* UIView+Shadow.swift in Sources */,
 				3E2C938023D0CD66000B082E /* ViewController.swift in Sources */,
+				3E611B2923D8704A008AD729 /* UIView+Round+Anchor.swift in Sources */,
 				3E2C93C423D0EDA6000B082E /* InputFormatter.swift in Sources */,
 				3E2C93B623D0CE8D000B082E /* UIFont+Customize.swift in Sources */,
+				3E611B1E23D86CDE008AD729 /* UIAlertController.swift in Sources */,
+				3E611B2723D86F0B008AD729 /* Strings.swift in Sources */,
 				3E2C93B423D0CE59000B082E /* UIColor+Customize.swift in Sources */,
 				3E2C93C823D1F9BD000B082E /* UIView.swift in Sources */,
 				3E2C93C623D1E5B6000B082E /* Dictionary.swift in Sources */,
 				3E2C937C23D0CD66000B082E /* AppDelegate.swift in Sources */,
 				3E2C93BE23D0EC91000B082E /* String.swift in Sources */,
 				3E2C93C023D0ED00000B082E /* UITextField+NextResponder.swift in Sources */,
+				3E611B2223D86D84008AD729 /* UIView+Gradient.swift in Sources */,
+				3E611B2523D86E85008AD729 /* ErrorHandleable.swift in Sources */,
 				3E2C937E23D0CD66000B082E /* SceneDelegate.swift in Sources */,
 				3E2C93BC23D0D123000B082E /* Constants.swift in Sources */,
+				3E611B2023D86D4A008AD729 /* UIFont+Bold.swift in Sources */,
+				3E611B1A23D76332008AD729 /* UIImage.swift in Sources */,
 				3E2C93C223D0ED49000B082E /* NSError.swift in Sources */,
+				3E611B2C23D870DE008AD729 /* BorderedButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
