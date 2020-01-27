@@ -38,6 +38,8 @@
 		3E611B2723D86F0B008AD729 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E611B2623D86F0B008AD729 /* Strings.swift */; };
 		3E611B2923D8704A008AD729 /* UIView+Round+Anchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E611B2823D8704A008AD729 /* UIView+Round+Anchor.swift */; };
 		3E611B2C23D870DE008AD729 /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E611B2B23D870DE008AD729 /* BorderedButton.swift */; };
+		3EDB5D2F23DF6B3E00C1662D /* BorderedButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EDB5D2E23DF6B3E00C1662D /* BorderedButtonTests.swift */; };
+		3EDC191023DF4FC200287C33 /* DictionaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EDC190F23DF4FC200287C33 /* DictionaryTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +98,8 @@
 		3E611B2823D8704A008AD729 /* UIView+Round+Anchor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Round+Anchor.swift"; sourceTree = "<group>"; };
 		3E611B2B23D870DE008AD729 /* BorderedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedButton.swift; sourceTree = "<group>"; };
 		3E611B2D23D8743C008AD729 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		3EDB5D2E23DF6B3E00C1662D /* BorderedButtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedButtonTests.swift; sourceTree = "<group>"; };
+		3EDC190F23DF4FC200287C33 /* DictionaryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -235,6 +239,8 @@
 			isa = PBXGroup;
 			children = (
 				3E2C93CC23D23732000B082E /* StringTests.swift */,
+				3EDC190F23DF4FC200287C33 /* DictionaryTests.swift */,
+				3EDB5D2E23DF6B3E00C1662D /* BorderedButtonTests.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -420,6 +426,8 @@
 			files = (
 				3E2C93CD23D23732000B082E /* StringTests.swift in Sources */,
 				3E2C939323D0CD68000B082E /* ResourcesTests.swift in Sources */,
+				3EDB5D2F23DF6B3E00C1662D /* BorderedButtonTests.swift in Sources */,
+				3EDC191023DF4FC200287C33 /* DictionaryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

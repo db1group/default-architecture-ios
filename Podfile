@@ -31,6 +31,11 @@ end
 target 'Resources' do
 	platform :ios, '13.0'
 	project 'Resources/Resources.xcodeproj'
+
+  target 'ResourcesTests' do
+     inherit! :search_paths
+     project 'Resources/Resources.xcodeproj'
+   end
 end
 
 target 'KeychainService' do
