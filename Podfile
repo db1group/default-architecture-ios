@@ -38,6 +38,15 @@ target 'KeychainService' do
 	project 'KeychainService/KeychainService.xcodeproj'
 end
 
+target 'Environments' do
+  platform :ios, '11.0'
+  project 'Environments/Environments.xcodeproj'
+  
+  target 'EnvironmentsTests' do
+    project 'Environments/Environments.xcodeproj'
+  end
+end
+
 # Application
 
 target 'Demo' do

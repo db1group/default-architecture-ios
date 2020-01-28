@@ -1,17 +1,17 @@
 //
 //  SceneDelegate.swift
-//  Environments
+//  CoordinatorService
 //
-//  Created by Glauco Dantas Beserra  on 27/01/20.
+//  Created by Glauco Dantas Beserra  on 20/01/20.
 //  Copyright © 2020 DB1 Global Software. All rights reserved.
 //
 
 import UIKit
 
+@available(iOS 13.0, *)
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
-
+    
     var window: UIWindow?
-
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
@@ -48,6 +48,4 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // to restore the scene back to its current state.
     }
 
-
 }
-
