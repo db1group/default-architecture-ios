@@ -59,7 +59,7 @@
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>CFBundleDisplayName</key>
-	<string>$(PRODUCT_NAME)</string>
+	<string>$(DISPLAY_NAME)</string>
 	<key>CFBundleIdentifier</key>
 	<string>$(APP_BUNDLE_ID)</string>
 	<key>Base URL</key>
