@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import LocalStore
 
 class ViewController: UIViewController {
 

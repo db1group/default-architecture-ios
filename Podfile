@@ -4,7 +4,7 @@ inhibit_all_warnings!
 # Application
 
 target 'Demo' do
-	platform :ios, '13.0'
+	platform :ios, '11.0'
 	project 'Demo/Demo.xcodeproj'
 end
 
