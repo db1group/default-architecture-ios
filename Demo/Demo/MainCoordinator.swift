@@ -9,7 +9,7 @@
 import UIKit
 
 import Core
-import FeatureA
+import EnvironmentDescription
 
 public class MainCoordinator: Coordinator {
     
@@ -71,11 +71,11 @@ public class MainCoordinator: Coordinator {
     private func goToEnvironmentDescription() {
         let newNavigationController = UINavigationController(rootViewController: UIViewController())
         
-        let featureACoordinator = FeatureACoordinator(navigationController: newNavigationController)
-        setUpChildCoordinator(featureACoordinator)
+        let environmentCoordinator = EnvironmentDescriptionCoordinator(navigationController: newNavigationController)
+        setUpChildCoordinator(environmentCoordinator)
         
         navigationController.present(newNavigationController, animated: true)
-        featureACoordinator.start()
+        environmentCoordinator.start()
     }
     
 }
@@ -99,8 +99,8 @@ extension MainCoordinator {
         }
     }
     
-    private func setUpChildCoordinator(_ featureACoordinator: FeatureACoordinator) {
-        featureACoordinator.parent = self
-        childCoordinators.append(featureACoordinator)
+    private func setUpChildCoordinator(_ environmentCoordinator: EnvironmentDescriptionCoordinator) {
+        environmentCoordinator.parent = self
+        childCoordinators.append(environmentCoordinator)
     }
 }

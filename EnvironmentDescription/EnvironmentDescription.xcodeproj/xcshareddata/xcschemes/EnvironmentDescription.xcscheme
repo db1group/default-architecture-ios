@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "519F464923E1FF39005B9F5B"
-               BuildableName = "FeatureA.framework"
-               BlueprintName = "FeatureA"
-               ReferencedContainer = "container:FeatureA.xcodeproj">
+               BlueprintIdentifier = "519F467723E215AB005B9F5B"
+               BuildableName = "EnvironmentDescription.framework"
+               BlueprintName = "EnvironmentDescription"
+               ReferencedContainer = "container:EnvironmentDescription.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -50,10 +50,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "519F464923E1FF39005B9F5B"
-            BuildableName = "FeatureA.framework"
-            BlueprintName = "FeatureA"
-            ReferencedContainer = "container:FeatureA.xcodeproj">
+            BlueprintIdentifier = "519F467723E215AB005B9F5B"
+            BuildableName = "EnvironmentDescription.framework"
+            BlueprintName = "EnvironmentDescription"
+            ReferencedContainer = "container:EnvironmentDescription.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>
