@@ -17,7 +17,7 @@ class TestAViewController: UIViewController {
     // MARK: - Properties
     
     var onBackToHome: (() -> Void)?
-    var backToHomeIsHidden: Bool = false
+    var backToHomeIsHidden: Bool = true
     
     // MARK: - Life cycle
     

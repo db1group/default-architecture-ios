@@ -8,16 +8,16 @@
 
 import UIKit
 
-class MainCoordinator: Coordinator {
+public class MainCoordinator: Coordinator {
     
-    var childCoordinators = [Coordinator]()
-    var navigationController: UINavigationController
+    public var childCoordinators = [Coordinator]()
+    public var navigationController: UINavigationController
     
-    required init(navigationController: UINavigationController) {
+    required public init(navigationController: UINavigationController) {
         self.navigationController = navigationController
     }
     
-    func start() {
+    public func start() {
         let viewController = ViewController.instantiate()
         setupMainViewController(viewController)
         navigationController.pushViewController(viewController, animated: false)
