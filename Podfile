@@ -14,3 +14,9 @@ target 'Demo' do
 	platform :ios, '13.0'
 	project 'Demo/Demo.xcodeproj'
 end
+
+target 'CoordinatorService' do 
+	platform :ios, '11.0'
+	project 'CoordinatorService/CoordinatorService.xcodeproj'
+end
+	
