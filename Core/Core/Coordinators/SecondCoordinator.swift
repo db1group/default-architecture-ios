@@ -10,6 +10,7 @@ import UIKit
 
 class SecondCoordinator: Coordinator {
     
+    var parent: Coordinator?
     var childCoordinators: [Coordinator] = []
     var navigationController: UINavigationController
     
@@ -28,7 +29,9 @@ class SecondCoordinator: Coordinator {
     
     func onFlowFinish(_ completion: (() -> Void)? = nil) {
         DispatchQueue.main.async {
-            self.navigationController.dismiss(animated: true, completion: completion)
+            self.navigationController.dismiss(animated: true, completion: {
+                self.parent?.childDidFinish(self)
+            })
         }
     }
     

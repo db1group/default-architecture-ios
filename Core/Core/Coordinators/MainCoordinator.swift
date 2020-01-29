@@ -10,6 +10,7 @@ import UIKit
 
 public class MainCoordinator: Coordinator {
     
+    public var parent: Coordinator?
     public var childCoordinators = [Coordinator]()
     public var navigationController: UINavigationController
     
@@ -97,16 +98,7 @@ extension MainCoordinator {
     }
     
     private func setUpChildCoordinator(_ secondCoordinator: SecondCoordinator) {
+        secondCoordinator.parent = self
         childCoordinators.append(secondCoordinator)
-        
-        secondCoordinator.onFlowCancel = { [unowned self] in
-            self.childDidFinish(secondCoordinator)
-        }
-        
-    }
-    
-    func childDidFinish(_ child: Coordinator?) {
-        guard let childIndex = childCoordinators.lastIndex(where: { $0 === child } ) else { return }
-        childCoordinators.remove(at: childIndex)
     }
 }

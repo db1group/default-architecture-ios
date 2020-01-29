@@ -1,4 +1,4 @@
-workspace 'DB1-Guideline'
+workspace 'DB1-Guidelines'
 inhibit_all_warnings!
 
 # Application
