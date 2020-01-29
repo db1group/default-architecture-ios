@@ -12,14 +12,6 @@
 		510F3FE423E1B6B9004AB1C7 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510F3FDD23E1B6B1004AB1C7 /* Coordinator.swift */; };
 		510F3FE523E1B6BB004AB1C7 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510F3FDE23E1B6B1004AB1C7 /* Storyboarded.swift */; };
 		510F3FE623E1B6BD004AB1C7 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510F3FDF23E1B6B1004AB1C7 /* UIViewController+.swift */; };
-		510F3FE723E1B6C2004AB1C7 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510F3FE123E1B6B2004AB1C7 /* MainCoordinator.swift */; };
-		510F3FE823E1B6C4004AB1C7 /* SecondCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510F3FE223E1B6B2004AB1C7 /* SecondCoordinator.swift */; };
-		510F3FE923E1B6C8004AB1C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510F3FDA23E1B6B1004AB1C7 /* ViewController.swift */; };
-		510F3FEA23E1B6CA004AB1C7 /* ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 510F3FDB23E1B6B1004AB1C7 /* ViewController.storyboard */; };
-		510F3FEB23E1B6CE004AB1C7 /* TestAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510F3FD423E1B6B1004AB1C7 /* TestAViewController.swift */; };
-		510F3FEC23E1B6D0004AB1C7 /* TestAViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 510F3FD523E1B6B1004AB1C7 /* TestAViewController.storyboard */; };
-		510F3FED23E1B6D3004AB1C7 /* TestBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510F3FD723E1B6B1004AB1C7 /* TestBViewController.swift */; };
-		510F3FEE23E1B6D5004AB1C7 /* TestBViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 510F3FD823E1B6B1004AB1C7 /* TestBViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,17 +19,9 @@
 		510F3FC923E1B4CD004AB1C7 /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		510F3FCC23E1B4CD004AB1C7 /* Core.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Core.h; sourceTree = "<group>"; };
 		510F3FCD23E1B4CD004AB1C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		510F3FD423E1B6B1004AB1C7 /* TestAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAViewController.swift; sourceTree = "<group>"; };
-		510F3FD523E1B6B1004AB1C7 /* TestAViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TestAViewController.storyboard; sourceTree = "<group>"; };
-		510F3FD723E1B6B1004AB1C7 /* TestBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestBViewController.swift; sourceTree = "<group>"; };
-		510F3FD823E1B6B1004AB1C7 /* TestBViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TestBViewController.storyboard; sourceTree = "<group>"; };
-		510F3FDA23E1B6B1004AB1C7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		510F3FDB23E1B6B1004AB1C7 /* ViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ViewController.storyboard; sourceTree = "<group>"; };
 		510F3FDD23E1B6B1004AB1C7 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		510F3FDE23E1B6B1004AB1C7 /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
 		510F3FDF23E1B6B1004AB1C7 /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
-		510F3FE123E1B6B2004AB1C7 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
-		510F3FE223E1B6B2004AB1C7 /* SecondCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondCoordinator.swift; sourceTree = "<group>"; };
 		99B8D24A7403CA1976512C6D /* Pods-Core.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Core.release.xcconfig"; path = "Target Support Files/Pods-Core/Pods-Core.release.xcconfig"; sourceTree = "<group>"; };
 		CD59A68E1A1EBA0DA178E9F6 /* libPods-Core.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Core.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -83,61 +67,21 @@
 		510F3FCB23E1B4CD004AB1C7 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				510F3FE023E1B6B1004AB1C7 /* Resources */,
-				510F3FE323E1B6B2004AB1C7 /* Coordinators */,
-				510F3FDC23E1B6B1004AB1C7 /* MainViewController */,
-				510F3FD623E1B6B1004AB1C7 /* TestAViewController */,
-				510F3FD923E1B6B1004AB1C7 /* TestBViewController */,
+				510F3FDD23E1B6B1004AB1C7 /* Coordinator.swift */,
 				510F3FCC23E1B4CD004AB1C7 /* Core.h */,
 				510F3FCD23E1B4CD004AB1C7 /* Info.plist */,
+				510F3FE023E1B6B1004AB1C7 /* Resources */,
 			);
 			path = Core;
-			sourceTree = "<group>";
-		};
-		510F3FD623E1B6B1004AB1C7 /* TestAViewController */ = {
-			isa = PBXGroup;
-			children = (
-				510F3FD423E1B6B1004AB1C7 /* TestAViewController.swift */,
-				510F3FD523E1B6B1004AB1C7 /* TestAViewController.storyboard */,
-			);
-			path = TestAViewController;
-			sourceTree = "<group>";
-		};
-		510F3FD923E1B6B1004AB1C7 /* TestBViewController */ = {
-			isa = PBXGroup;
-			children = (
-				510F3FD723E1B6B1004AB1C7 /* TestBViewController.swift */,
-				510F3FD823E1B6B1004AB1C7 /* TestBViewController.storyboard */,
-			);
-			path = TestBViewController;
-			sourceTree = "<group>";
-		};
-		510F3FDC23E1B6B1004AB1C7 /* MainViewController */ = {
-			isa = PBXGroup;
-			children = (
-				510F3FDA23E1B6B1004AB1C7 /* ViewController.swift */,
-				510F3FDB23E1B6B1004AB1C7 /* ViewController.storyboard */,
-			);
-			path = MainViewController;
 			sourceTree = "<group>";
 		};
 		510F3FE023E1B6B1004AB1C7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				510F3FDD23E1B6B1004AB1C7 /* Coordinator.swift */,
 				510F3FDE23E1B6B1004AB1C7 /* Storyboarded.swift */,
 				510F3FDF23E1B6B1004AB1C7 /* UIViewController+.swift */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		510F3FE323E1B6B2004AB1C7 /* Coordinators */ = {
-			isa = PBXGroup;
-			children = (
-				510F3FE123E1B6B2004AB1C7 /* MainCoordinator.swift */,
-				510F3FE223E1B6B2004AB1C7 /* SecondCoordinator.swift */,
-			);
-			path = Coordinators;
 			sourceTree = "<group>";
 		};
 		E2F0D8DD81E17974C6FABF48 /* Pods */ = {
@@ -220,9 +164,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				510F3FEE23E1B6D5004AB1C7 /* TestBViewController.storyboard in Resources */,
-				510F3FEA23E1B6CA004AB1C7 /* ViewController.storyboard in Resources */,
-				510F3FEC23E1B6D0004AB1C7 /* TestAViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,13 +199,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				510F3FE923E1B6C8004AB1C7 /* ViewController.swift in Sources */,
-				510F3FEB23E1B6CE004AB1C7 /* TestAViewController.swift in Sources */,
 				510F3FE423E1B6B9004AB1C7 /* Coordinator.swift in Sources */,
-				510F3FE723E1B6C2004AB1C7 /* MainCoordinator.swift in Sources */,
 				510F3FE523E1B6BB004AB1C7 /* Storyboarded.swift in Sources */,
-				510F3FED23E1B6D3004AB1C7 /* TestBViewController.swift in Sources */,
-				510F3FE823E1B6C4004AB1C7 /* SecondCoordinator.swift in Sources */,
 				510F3FE623E1B6BD004AB1C7 /* UIViewController+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

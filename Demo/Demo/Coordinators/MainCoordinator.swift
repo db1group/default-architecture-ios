@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Core
 
 public class MainCoordinator: Coordinator {
     
@@ -19,12 +20,12 @@ public class MainCoordinator: Coordinator {
     }
     
     public func start() {
-        let viewController = ViewController.instantiate()
+        let viewController = MainViewController.instantiate()
         setupMainViewController(viewController)
         navigationController.pushViewController(viewController, animated: false)
     }
     
-    private func setupMainViewController(_ viewController: ViewController) {
+    private func setupMainViewController(_ viewController: MainViewController) {
         viewController.onGoToATapped = { [unowned self] in
             self.goToAScene()
         }
