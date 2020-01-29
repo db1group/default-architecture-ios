@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1220C36C23D2009700B019D6 /* LocalStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1220C36B23D2009700B019D6 /* LocalStore.framework */; };
 		1220C36D23D2009700B019D6 /* LocalStore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1220C36B23D2009700B019D6 /* LocalStore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		510F3FF023E1B942004AB1C7 /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 510F3FEF23E1B942004AB1C7 /* Core.framework */; };
+		510F3FF123E1B942004AB1C7 /* Core.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 510F3FEF23E1B942004AB1C7 /* Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		518722ED23D0B11000BE5E4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518722EC23D0B11000BE5E4D /* AppDelegate.swift */; };
 		518722EF23D0B11000BE5E4D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518722EE23D0B11000BE5E4D /* SceneDelegate.swift */; };
 		518722F123D0B11000BE5E4D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518722F023D0B11000BE5E4D /* ViewController.swift */; };
@@ -37,6 +39,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				1220C36D23D2009700B019D6 /* LocalStore.framework in Embed Frameworks */,
+				510F3FF123E1B942004AB1C7 /* Core.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -47,6 +50,7 @@
 		1220C36B23D2009700B019D6 /* LocalStore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LocalStore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		22125AD96421E19F3320B025 /* libPods-Demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		225FBF2FDBC6A9D07420F680 /* Pods-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.debug.xcconfig"; path = "Target Support Files/Pods-Demo/Pods-Demo.debug.xcconfig"; sourceTree = "<group>"; };
+		510F3FEF23E1B942004AB1C7 /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		518722E923D0B11000BE5E4D /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		518722EC23D0B11000BE5E4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		518722EE23D0B11000BE5E4D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +71,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1220C36C23D2009700B019D6 /* LocalStore.framework in Frameworks */,
+				510F3FF023E1B942004AB1C7 /* Core.framework in Frameworks */,
 				8ADE0ACB67EC8D594781DEAB /* libPods-Demo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -94,6 +99,7 @@
 		1DE56D8062E519C7413FEE0A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				510F3FEF23E1B942004AB1C7 /* Core.framework */,
 				1220C36B23D2009700B019D6 /* LocalStore.framework */,
 				22125AD96421E19F3320B025 /* libPods-Demo.a */,
 			);

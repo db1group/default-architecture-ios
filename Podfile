@@ -20,3 +20,7 @@ target 'CoordinatorService' do
 	project 'CoordinatorService/CoordinatorService.xcodeproj'
 end
 	
+target 'Core' do 
+	platform :ios, '11.0'
+	project 'Core/Core.xcodeproj'
+end
