@@ -1,0 +1,22 @@
+//
+//  Development.xcconfig
+//  Demo
+//
+//  Created by Glauco Dantas Beserra  on 28/01/20.
+//  Copyright © 2020 Glauco Dantas Beserra . All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+#include "../Pods/Target Support Files/Pods-Demo/Pods-Demo.development.xcconfig"
+
+// App Config
+
+DISPLAY_NAME = Demo (Dev)
+APP_BUNDLE_ID = com.db1.Demo.dev
+
+// API Config
+
+BASE_URL = api.example.dev
+API_KEY = 4571047960318d233d64028363dfa771
