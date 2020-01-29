@@ -8,6 +8,13 @@ target 'Demo' do
 	project 'Demo/Demo.xcodeproj'
 end
 
+# Features
+
+target 'FeatureA' do 
+  platform :ios, '11.0'
+  project 'FeatureA/FeatureA.xcodeproj'
+end
+
 # Adicionar o target para cada novo projeto adicionado ao workspace!
 
 def testing

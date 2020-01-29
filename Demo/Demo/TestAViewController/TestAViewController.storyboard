@@ -11,7 +11,7 @@
         <!--TestA View Controller-->
         <scene sceneID="Sby-md-XKz">
             <objects>
-                <viewController storyboardIdentifier="TestAViewController" id="O0h-mQ-pAm" customClass="TestAViewController" customModule="CoordinatorService" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TestAViewController" id="O0h-mQ-pAm" customClass="TestAViewController" customModule="Demo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Xd8-a5-9Uk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -22,29 +22,14 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xcq-81-RyQ">
-                                <rect key="frame" x="140.5" y="433" width="133" height="30"/>
-                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="15"/>
-                                <state key="normal" title="◀️ Back To Home">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="onBackToHomeTapped:" destination="O0h-mQ-pAm" eventType="touchUpInside" id="ONe-WC-e6O"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="xcq-81-RyQ" firstAttribute="centerY" secondItem="Xd8-a5-9Uk" secondAttribute="centerY" id="9tN-JH-klT"/>
                             <constraint firstItem="Uu9-A5-Vhk" firstAttribute="top" secondItem="clz-LH-L4G" secondAttribute="top" constant="20" id="Qoj-RU-aKp"/>
                             <constraint firstItem="Uu9-A5-Vhk" firstAttribute="centerX" secondItem="Xd8-a5-9Uk" secondAttribute="centerX" id="YGA-a1-cg5"/>
-                            <constraint firstItem="xcq-81-RyQ" firstAttribute="centerX" secondItem="Xd8-a5-9Uk" secondAttribute="centerX" id="dt8-U9-Fhp"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="clz-LH-L4G"/>
                     </view>
-                    <connections>
-                        <outlet property="backToHomeButton" destination="xcq-81-RyQ" id="tqJ-to-oX7"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bob-Tu-soa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

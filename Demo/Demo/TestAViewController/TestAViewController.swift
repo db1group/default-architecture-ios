@@ -8,29 +8,4 @@
 
 import UIKit
 
-class TestAViewController: UIViewController {
-
-    // MARK: - Outlets
-    
-    @IBOutlet weak var backToHomeButton: UIButton!
-
-    // MARK: - Properties
-    
-    var onBackToHome: (() -> Void)?
-    var backToHomeIsHidden: Bool = true
-    
-    // MARK: - Life cycle
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        backToHomeButton.isHidden = backToHomeIsHidden
-    }
-    
-    // MARK: - Actions
-
-    @IBAction func onBackToHomeTapped(_ sender: UIButton) {
-        onBackToHome?()
-    }
-
-}
+class TestAViewController: UIViewController { }

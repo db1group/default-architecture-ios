@@ -7,7 +7,9 @@
 //
 
 import UIKit
+
 import Core
+import FeatureA
 
 public class MainCoordinator: Coordinator {
     
@@ -39,7 +41,7 @@ public class MainCoordinator: Coordinator {
         }
         
         viewController.onAddChildCoordinator = { [unowned self] in
-            self.goToASceneWithNewCoordinator()
+            self.goToEnvironmentDescription()
         }
     }
     
@@ -56,25 +58,24 @@ public class MainCoordinator: Coordinator {
         navigationController.pushViewController(viewController, animated: true)
     }
     
-    // MARK: - Go To A Scene With Child Coordinator
-    
-    private func goToASceneWithNewCoordinator() {
-        
-        let newNavigationController = UINavigationController(rootViewController: UIViewController())
-        
-        let secondCoordinator = SecondCoordinator(navigationController: newNavigationController)
-        setUpChildCoordinator(secondCoordinator)
-        
-        navigationController.present(newNavigationController, animated: true)
-        secondCoordinator.start()
-    }
-    
     // MARK: - Go To B Scene With Presented Mode
     
     private func goToBSceneWithPresentedMode() {
         let viewController = TestBViewController.instantiate()
         setupBScene(viewController, hideCloseButton: false)
         navigationController.present(viewController, animated: true)
+    }
+    
+    // MARK: - Go To Environment Description With Child Coordinator
+    
+    private func goToEnvironmentDescription() {
+        let newNavigationController = UINavigationController(rootViewController: UIViewController())
+        
+        let featureACoordinator = FeatureACoordinator(navigationController: newNavigationController)
+        setUpChildCoordinator(featureACoordinator)
+        
+        navigationController.present(newNavigationController, animated: true)
+        featureACoordinator.start()
     }
     
 }
@@ -98,8 +99,8 @@ extension MainCoordinator {
         }
     }
     
-    private func setUpChildCoordinator(_ secondCoordinator: SecondCoordinator) {
-        secondCoordinator.parent = self
-        childCoordinators.append(secondCoordinator)
+    private func setUpChildCoordinator(_ featureACoordinator: FeatureACoordinator) {
+        featureACoordinator.parent = self
+        childCoordinators.append(featureACoordinator)
     }
 }
