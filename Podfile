@@ -1,5 +1,12 @@
-workspace 'DB1-Guidelines'
+workspace 'DB1-Guideline'
 inhibit_all_warnings!
+
+# Application
+
+target 'Demo' do
+	platform :ios, '11.0'
+	project 'Demo/Demo.xcodeproj'
+end
 
 # Adicionar o target para cada novo projeto adicionado ao workspace!
 
@@ -36,11 +43,4 @@ end
 target 'KeychainService' do
 	platform :ios, '11.0'
 	project 'KeychainService/KeychainService.xcodeproj'
-end
-
-# Application
-
-target 'Demo' do
-	platform :ios, '13.0'
-	project 'Demo/Demo.xcodeproj'
 end

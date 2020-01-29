@@ -15,8 +15,8 @@
 		1220C36923D2003700B019D6 /* NSManagedObject+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1220C36423D2003700B019D6 /* NSManagedObject+Extensions.swift */; };
 		1220C36A23D2003700B019D6 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1220C36523D2003700B019D6 /* Model.xcdatamodeld */; };
 		1220C37123D2042B00B019D6 /* NSPersistentContainer+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1220C37023D2042B00B019D6 /* NSPersistentContainer+Extensions.swift */; };
-		874C2975601F45EDAFAB1716 /* libPods-LocalStore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58CB751068082B31E8A578FF /* libPods-LocalStore.a */; };
-		F0A64F64FBC9A7E90857EF70 /* libPods-LocalStoreTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7791A4F3DA3195B3EBB2D3C7 /* libPods-LocalStoreTests.a */; };
+		7A4426A42F63436FFB4C7883 /* libPods-LocalStoreTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BC84F725280051A87765106 /* libPods-LocalStoreTests.a */; };
+		C77D74C879E7BF9B3BF0688C /* libPods-LocalStore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B8CA111D37EA5E08B1EF0F8D /* libPods-LocalStore.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +30,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		05F9E774BA9362169B3F26C3 /* Pods-LocalStore-LocalStoreTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocalStore-LocalStoreTests.debug.xcconfig"; path = "Target Support Files/Pods-LocalStore-LocalStoreTests/Pods-LocalStore-LocalStoreTests.debug.xcconfig"; sourceTree = "<group>"; };
 		1220C34723D1FFB500B019D6 /* LocalStore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LocalStore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1220C34A23D1FFB500B019D6 /* LocalStore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocalStore.h; sourceTree = "<group>"; };
 		1220C34B23D1FFB500B019D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -42,13 +41,12 @@
 		1220C36423D2003700B019D6 /* NSManagedObject+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSManagedObject+Extensions.swift"; path = "../NSManagedObject+Extensions.swift"; sourceTree = "<group>"; };
 		1220C36623D2003700B019D6 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		1220C37023D2042B00B019D6 /* NSPersistentContainer+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSPersistentContainer+Extensions.swift"; sourceTree = "<group>"; };
-		21398BB389D9F380849A4EAF /* Pods-LocalStoreTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocalStoreTests.release.xcconfig"; path = "Target Support Files/Pods-LocalStoreTests/Pods-LocalStoreTests.release.xcconfig"; sourceTree = "<group>"; };
-		58CB751068082B31E8A578FF /* libPods-LocalStore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LocalStore.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7791A4F3DA3195B3EBB2D3C7 /* libPods-LocalStoreTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LocalStoreTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8FC2E9E4AB2934FA005BCA7F /* Pods-LocalStoreTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocalStoreTests.debug.xcconfig"; path = "Target Support Files/Pods-LocalStoreTests/Pods-LocalStoreTests.debug.xcconfig"; sourceTree = "<group>"; };
-		F2AE45579D2798BAED571D38 /* Pods-LocalStore-LocalStoreTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocalStore-LocalStoreTests.release.xcconfig"; path = "Target Support Files/Pods-LocalStore-LocalStoreTests/Pods-LocalStore-LocalStoreTests.release.xcconfig"; sourceTree = "<group>"; };
-		F3868A4638E398F9AEF54967 /* Pods-LocalStore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocalStore.debug.xcconfig"; path = "Target Support Files/Pods-LocalStore/Pods-LocalStore.debug.xcconfig"; sourceTree = "<group>"; };
-		FABD281CB7B87018407A529B /* Pods-LocalStore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocalStore.release.xcconfig"; path = "Target Support Files/Pods-LocalStore/Pods-LocalStore.release.xcconfig"; sourceTree = "<group>"; };
+		2BC84F725280051A87765106 /* libPods-LocalStoreTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LocalStoreTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F67D56CEB154D8317ECF52A /* Pods-LocalStoreTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocalStoreTests.debug.xcconfig"; path = "Target Support Files/Pods-LocalStoreTests/Pods-LocalStoreTests.debug.xcconfig"; sourceTree = "<group>"; };
+		820ECC0667778A0472619DDF /* Pods-LocalStoreTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocalStoreTests.release.xcconfig"; path = "Target Support Files/Pods-LocalStoreTests/Pods-LocalStoreTests.release.xcconfig"; sourceTree = "<group>"; };
+		8F926D130A550364D2A51EF8 /* Pods-LocalStore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocalStore.release.xcconfig"; path = "Target Support Files/Pods-LocalStore/Pods-LocalStore.release.xcconfig"; sourceTree = "<group>"; };
+		B8CA111D37EA5E08B1EF0F8D /* libPods-LocalStore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LocalStore.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D957F50C8ECF8E8FBBAF5411 /* Pods-LocalStore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocalStore.debug.xcconfig"; path = "Target Support Files/Pods-LocalStore/Pods-LocalStore.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				874C2975601F45EDAFAB1716 /* libPods-LocalStore.a in Frameworks */,
+				C77D74C879E7BF9B3BF0688C /* libPods-LocalStore.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,7 +63,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1220C35123D1FFB500B019D6 /* LocalStore.framework in Frameworks */,
-				F0A64F64FBC9A7E90857EF70 /* libPods-LocalStoreTests.a in Frameworks */,
+				7A4426A42F63436FFB4C7883 /* libPods-LocalStoreTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,8 +76,8 @@
 				1220C34923D1FFB500B019D6 /* LocalStore */,
 				1220C35423D1FFB500B019D6 /* LocalStoreTests */,
 				1220C34823D1FFB500B019D6 /* Products */,
-				44D96098E19877806468FE80 /* Pods */,
-				E66D9B0E7F3B682EF920B972 /* Frameworks */,
+				79576228BC487721AB2E0835 /* Pods */,
+				CF5A8C46B7AAD2A39BFA80CA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -131,25 +129,23 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		44D96098E19877806468FE80 /* Pods */ = {
+		79576228BC487721AB2E0835 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				F3868A4638E398F9AEF54967 /* Pods-LocalStore.debug.xcconfig */,
-				FABD281CB7B87018407A529B /* Pods-LocalStore.release.xcconfig */,
-				05F9E774BA9362169B3F26C3 /* Pods-LocalStore-LocalStoreTests.debug.xcconfig */,
-				F2AE45579D2798BAED571D38 /* Pods-LocalStore-LocalStoreTests.release.xcconfig */,
-				8FC2E9E4AB2934FA005BCA7F /* Pods-LocalStoreTests.debug.xcconfig */,
-				21398BB389D9F380849A4EAF /* Pods-LocalStoreTests.release.xcconfig */,
+				D957F50C8ECF8E8FBBAF5411 /* Pods-LocalStore.debug.xcconfig */,
+				8F926D130A550364D2A51EF8 /* Pods-LocalStore.release.xcconfig */,
+				6F67D56CEB154D8317ECF52A /* Pods-LocalStoreTests.debug.xcconfig */,
+				820ECC0667778A0472619DDF /* Pods-LocalStoreTests.release.xcconfig */,
 			);
 			name = Pods;
 			path = ../Pods;
 			sourceTree = "<group>";
 		};
-		E66D9B0E7F3B682EF920B972 /* Frameworks */ = {
+		CF5A8C46B7AAD2A39BFA80CA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				58CB751068082B31E8A578FF /* libPods-LocalStore.a */,
-				7791A4F3DA3195B3EBB2D3C7 /* libPods-LocalStoreTests.a */,
+				B8CA111D37EA5E08B1EF0F8D /* libPods-LocalStore.a */,
+				2BC84F725280051A87765106 /* libPods-LocalStoreTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -172,7 +168,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1220C35B23D1FFB500B019D6 /* Build configuration list for PBXNativeTarget "LocalStore" */;
 			buildPhases = (
-				C357310D3F0D595113270812 /* [CP] Check Pods Manifest.lock */,
+				404051BAB7DD59CCE6322DBC /* [CP] Check Pods Manifest.lock */,
 				1220C34223D1FFB500B019D6 /* Headers */,
 				1220C34323D1FFB500B019D6 /* Sources */,
 				1220C34423D1FFB500B019D6 /* Frameworks */,
@@ -191,7 +187,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1220C35E23D1FFB500B019D6 /* Build configuration list for PBXNativeTarget "LocalStoreTests" */;
 			buildPhases = (
-				81272CFC2C05E92AAAA9D478 /* [CP] Check Pods Manifest.lock */,
+				6FED84DFB2BB24D8FF5251DB /* [CP] Check Pods Manifest.lock */,
 				1220C34C23D1FFB500B019D6 /* Sources */,
 				1220C34D23D1FFB500B019D6 /* Frameworks */,
 				1220C34E23D1FFB500B019D6 /* Resources */,
@@ -261,29 +257,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		81272CFC2C05E92AAAA9D478 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-LocalStoreTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C357310D3F0D595113270812 /* [CP] Check Pods Manifest.lock */ = {
+		404051BAB7DD59CCE6322DBC /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -299,6 +273,28 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-LocalStore-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6FED84DFB2BB24D8FF5251DB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LocalStoreTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -461,7 +457,7 @@
 		};
 		1220C35C23D1FFB500B019D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F3868A4638E398F9AEF54967 /* Pods-LocalStore.debug.xcconfig */;
+			baseConfigurationReference = D957F50C8ECF8E8FBBAF5411 /* Pods-LocalStore.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -486,7 +482,7 @@
 		};
 		1220C35D23D1FFB500B019D6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FABD281CB7B87018407A529B /* Pods-LocalStore.release.xcconfig */;
+			baseConfigurationReference = 8F926D130A550364D2A51EF8 /* Pods-LocalStore.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -511,7 +507,7 @@
 		};
 		1220C35F23D1FFB500B019D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8FC2E9E4AB2934FA005BCA7F /* Pods-LocalStoreTests.debug.xcconfig */;
+			baseConfigurationReference = 6F67D56CEB154D8317ECF52A /* Pods-LocalStoreTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -530,7 +526,7 @@
 		};
 		1220C36023D1FFB500B019D6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 21398BB389D9F380849A4EAF /* Pods-LocalStoreTests.release.xcconfig */;
+			baseConfigurationReference = 820ECC0667778A0472619DDF /* Pods-LocalStoreTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
