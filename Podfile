@@ -23,6 +23,11 @@ target 'EnvironmentDescription' do
   project 'EnvironmentDescription/EnvironmentDescription.xcodeproj'
 end
 
+target 'SwiftUIDemo' do 
+  platform :ios, '13.0'
+  project 'SwiftUIDemo/SwiftUIDemo.xcodeproj'
+end
+
 # DB1 Libs
 
 target 'Core' do 

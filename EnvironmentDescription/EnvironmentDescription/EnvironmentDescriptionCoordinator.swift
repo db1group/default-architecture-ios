@@ -28,18 +28,18 @@ public class EnvironmentDescriptionCoordinator: Coordinator {
         navigationController.setViewControllers([viewController], animated: false)
     }
     
+    private func setUpEnvironmentScene(_ viewController: EnvironmentViewController) {
+        viewController.onBackToHome = { [unowned self] in
+            self.onFlowCancel?()
+            self.onFlowFinish()
+        }
+    }
+    
     func onFlowFinish(_ completion: (() -> Void)? = nil) {
         DispatchQueue.main.async {
             self.navigationController.dismiss(animated: true, completion: {
                 self.parent?.childDidFinish(self)
             })
-        }
-    }
-    
-    private func setUpEnvironmentScene(_ viewController: EnvironmentViewController) {
-        viewController.onBackToHome = { [unowned self] in
-            self.onFlowCancel?()
-            self.onFlowFinish()
         }
     }
 }

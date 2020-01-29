@@ -41,7 +41,12 @@ public class MainCoordinator: Coordinator {
         }
         
         viewController.onAddChildCoordinator = { [unowned self] in
-            self.goToEnvironmentDescription()
+            if #available(iOS 13.0, *) {
+                self.goToSwiftUIDemo()
+            } else {
+                self.goToEnvironmentDescription()
+            }
+            
         }
     }
     
@@ -76,6 +81,12 @@ public class MainCoordinator: Coordinator {
         
         navigationController.present(newNavigationController, animated: true)
         environmentCoordinator.start()
+    }
+    
+    // MARK: - Go To SwiftUI Demo With Child Coordinator
+    
+    private func goToSwiftUIDemo() {
+        // CONFIGURAR
     }
     
 }
