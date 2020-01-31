@@ -8,6 +8,7 @@
 
 import SwiftUI
 
+@available(iOS 13.0, *)
 struct ContentView: View {
     var body: some View {
         VStack {
@@ -20,13 +21,13 @@ struct ContentView: View {
                 .padding(.bottom, -130)
             
             VStack(alignment: .leading) {
-                Text("Turtle Rock!")
+                Text("DB1")
                     .font(.title)
                 HStack {
-                    Text("Joshua Tree National Park")
+                    Text("Global Software")
                         .font(.subheadline)
                     Spacer()
-                    Text("California")
+                    Text("Maringá - PR")
                         .font(.subheadline)
                 }
             }
@@ -34,5 +35,12 @@ struct ContentView: View {
             
             Spacer()
         }
+    }
+}
+
+@available(iOS 13.0, *)
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
     }
 }

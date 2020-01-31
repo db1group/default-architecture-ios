@@ -7,8 +7,10 @@
 //
 
 import UIKit
+import SwiftUI
 
 import Core
+import SwiftUIDemo
 import EnvironmentDescription
 
 public class MainCoordinator: Coordinator {
@@ -28,6 +30,7 @@ public class MainCoordinator: Coordinator {
     }
     
     private func setupMainViewController(_ viewController: MainViewController) {
+        
         viewController.onGoToATapped = { [unowned self] in
             self.goToAScene()
         }
@@ -41,12 +44,14 @@ public class MainCoordinator: Coordinator {
         }
         
         viewController.onAddChildCoordinator = { [unowned self] in
-//            if #available(iOS 13.0, *) {
-//                self.goToSwiftUIDemo()
-//            } else {
                 self.goToEnvironmentDescription()
-//            }
-            
+        }
+        
+        if #available(iOS 13.0, *) {
+            viewController.canShowSwiftUIExample = true
+            viewController.onPresentSwiftUIExample = { [unowned self] in
+                    self.goToSwiftUIDemo()
+            }
         }
     }
     
@@ -85,8 +90,15 @@ public class MainCoordinator: Coordinator {
     
     // MARK: - Go To SwiftUI Demo With Child Coordinator
     
+    @available(iOS 13.0, *)
     private func goToSwiftUIDemo() {
-        // CONFIGURAR
+        let newNavigationController = UINavigationController(rootViewController: UIViewController())
+        
+        let swiftUICoordinator = SwiftUIDemoCoordinator(navigationController: newNavigationController)
+        setUpChildCoordinator(swiftUICoordinator)
+        
+        navigationController.present(newNavigationController, animated: true)
+        swiftUICoordinator.start()
     }
     
 }
@@ -110,8 +122,8 @@ extension MainCoordinator {
         }
     }
     
-    private func setUpChildCoordinator(_ environmentCoordinator: EnvironmentDescriptionCoordinator) {
-        environmentCoordinator.parent = self
-        childCoordinators.append(environmentCoordinator)
+    private func setUpChildCoordinator(_ childCoordinator: Coordinator) {
+        childCoordinator.parent = self
+        childCoordinators.append(childCoordinator)
     }
 }

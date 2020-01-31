@@ -8,7 +8,6 @@
 
 import UIKit
 import Core
-import SwiftUI
 
 public class EnvironmentDescriptionCoordinator: Coordinator {
     
@@ -24,15 +23,9 @@ public class EnvironmentDescriptionCoordinator: Coordinator {
     }
     
     public func start() {
-        if #available(iOS 13.0, *) {
-            let host = UIHostingController(rootView: ContentView())
-            navigationController.setViewControllers([host], animated: false)
-        } else {
-            let viewController = EnvironmentViewController.instantiate()
-            setUpEnvironmentScene(viewController)
-            navigationController.setViewControllers([viewController], animated: false)
-        }
-        
+        let viewController = EnvironmentViewController.instantiate()
+        setUpEnvironmentScene(viewController)
+        navigationController.setViewControllers([viewController], animated: false)
     }
     
     private func setUpEnvironmentScene(_ viewController: EnvironmentViewController) {

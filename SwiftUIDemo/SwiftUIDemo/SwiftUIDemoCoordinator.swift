@@ -10,6 +10,7 @@ import Core
 import UIKit
 import SwiftUI
 
+@available(iOS 13.0, *)
 public class SwiftUIDemoCoordinator: Coordinator {
     
     public var parent: Coordinator?
@@ -20,11 +21,14 @@ public class SwiftUIDemoCoordinator: Coordinator {
     
     required public init(navigationController: UINavigationController) {
         self.navigationController = navigationController
+        
+        // TODO: Descomentar a linha seguinte quando descobrir como observar os eventos do ContentView
+//        navigationController.modalPresentationStyle = .fullScreen
     }
     
     public func start() {
         let host = UIHostingController(rootView: ContentView())
-        navigationController.setViewControllers([host], animated: true)
+        navigationController.setViewControllers([host], animated: false)
     }
     
     

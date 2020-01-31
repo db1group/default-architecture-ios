@@ -24,7 +24,7 @@ target 'EnvironmentDescription' do
 end
 
 target 'SwiftUIDemo' do 
-  platform :ios, '13.0'
+  platform :ios, '11.0'
   project 'SwiftUIDemo/SwiftUIDemo.xcodeproj'
 end
 

@@ -17,10 +17,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="38W-oF-sY6">
-                                <rect key="frame" x="22" y="376" width="370" height="144"/>
+                                <rect key="frame" x="116.5" y="343" width="181" height="210.5"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="slv-FP-BQI">
-                                        <rect key="frame" x="0.0" y="0.0" width="370" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="181" height="30"/>
                                         <fontDescription key="fontDescription" type="system" weight="black" pointSize="15"/>
                                         <state key="normal" title="Go To A"/>
                                         <connections>
@@ -28,7 +28,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gDi-ZX-cSl">
-                                        <rect key="frame" x="0.0" y="38" width="370" height="30"/>
+                                        <rect key="frame" x="0.0" y="38" width="181" height="30"/>
                                         <fontDescription key="fontDescription" type="system" weight="black" pointSize="15"/>
                                         <state key="normal" title="Go To B"/>
                                         <connections>
@@ -36,19 +36,33 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RKn-3I-Sdp">
-                                        <rect key="frame" x="0.0" y="76" width="370" height="30"/>
+                                        <rect key="frame" x="0.0" y="76" width="181" height="30"/>
                                         <fontDescription key="fontDescription" type="system" weight="black" pointSize="15"/>
                                         <state key="normal" title="Present"/>
                                         <connections>
                                             <action selector="presentViewTapped:" destination="MZq-e0-SIR" eventType="touchUpInside" id="dNu-bj-GY2"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Child Coordinators:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0b1-TC-SLh">
+                                        <rect key="frame" x="0.0" y="114" width="181" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7CC-On-iFj">
-                                        <rect key="frame" x="0.0" y="114" width="370" height="30"/>
+                                        <rect key="frame" x="0.0" y="142.5" width="181" height="30"/>
                                         <fontDescription key="fontDescription" type="system" weight="black" pointSize="15"/>
-                                        <state key="normal" title="Add Child Coordinator (Show Environment Info)"/>
+                                        <state key="normal" title="Show Environment Info"/>
                                         <connections>
                                             <action selector="addChildCoordinatorTapped:" destination="MZq-e0-SIR" eventType="touchUpInside" id="0zj-vP-vsJ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="28b-zH-yYG">
+                                        <rect key="frame" x="0.0" y="180.5" width="181" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="15"/>
+                                        <state key="normal" title="SwiftUI Example"/>
+                                        <connections>
+                                            <action selector="swiftUIExampleTapped:" destination="MZq-e0-SIR" eventType="touchUpInside" id="8xN-gm-bRs"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -63,6 +77,7 @@
                     </view>
                     <connections>
                         <outlet property="mainStackView" destination="38W-oF-sY6" id="0Pn-QL-r6y"/>
+                        <outlet property="swiftUIExampleButton" destination="28b-zH-yYG" id="ZxC-nL-XrQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BxY-c1-Ozx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

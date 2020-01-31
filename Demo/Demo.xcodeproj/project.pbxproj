@@ -25,6 +25,8 @@
 		519F466B23E20B89005B9F5B /* Networking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 519F466723E20B89005B9F5B /* Networking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		51A0168F23E3F3F9003582E8 /* EnvironmentDescription.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51A0165923E2212E003582E8 /* EnvironmentDescription.framework */; };
 		51A0169023E3F3F9003582E8 /* EnvironmentDescription.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 51A0165923E2212E003582E8 /* EnvironmentDescription.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		51A0169223E44690003582E8 /* SwiftUIDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51A0169123E44690003582E8 /* SwiftUIDemo.framework */; };
+		51A0169323E44690003582E8 /* SwiftUIDemo.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 51A0169123E44690003582E8 /* SwiftUIDemo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		51F07E7923E1FB1700E1A1E8 /* TestBViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51F07E6E23E1FB1700E1A1E8 /* TestBViewController.storyboard */; };
 		51F07E7A23E1FB1700E1A1E8 /* TestBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F07E6F23E1FB1700E1A1E8 /* TestBViewController.swift */; };
 		51F07E7B23E1FB1700E1A1E8 /* TestAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F07E7123E1FB1700E1A1E8 /* TestAViewController.swift */; };
@@ -54,6 +56,7 @@
 				519F466923E20B89005B9F5B /* LocalStore.framework in Embed Frameworks */,
 				51A0169023E3F3F9003582E8 /* EnvironmentDescription.framework in Embed Frameworks */,
 				512B193123E1CB5700B0F803 /* Core.framework in Embed Frameworks */,
+				51A0169323E44690003582E8 /* SwiftUIDemo.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -81,6 +84,7 @@
 		519F466623E20B89005B9F5B /* LocalStore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LocalStore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		519F466723E20B89005B9F5B /* Networking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Networking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		51A0165923E2212E003582E8 /* EnvironmentDescription.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EnvironmentDescription.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		51A0169123E44690003582E8 /* SwiftUIDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftUIDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		51F07E6E23E1FB1700E1A1E8 /* TestBViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TestBViewController.storyboard; sourceTree = "<group>"; };
 		51F07E6F23E1FB1700E1A1E8 /* TestBViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestBViewController.swift; sourceTree = "<group>"; };
 		51F07E7123E1FB1700E1A1E8 /* TestAViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestAViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +105,7 @@
 				519F466A23E20B89005B9F5B /* Networking.framework in Frameworks */,
 				512B193023E1CB5700B0F803 /* Core.framework in Frameworks */,
 				51A0168F23E3F3F9003582E8 /* EnvironmentDescription.framework in Frameworks */,
+				51A0169223E44690003582E8 /* SwiftUIDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,6 +122,7 @@
 		1DE56D8062E519C7413FEE0A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				51A0169123E44690003582E8 /* SwiftUIDemo.framework */,
 				51A0165923E2212E003582E8 /* EnvironmentDescription.framework */,
 				519F466623E20B89005B9F5B /* LocalStore.framework */,
 				519F466723E20B89005B9F5B /* Networking.framework */,
