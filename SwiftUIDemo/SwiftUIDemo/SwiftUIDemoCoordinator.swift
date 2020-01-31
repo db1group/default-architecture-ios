@@ -17,8 +17,6 @@ public class SwiftUIDemoCoordinator: Coordinator {
     public var childCoordinators: [Coordinator] = []
     public var navigationController: UINavigationController
     
-    public var onFlowCancel: (() -> Void)?
-    
     required public init(navigationController: UINavigationController) {
         self.navigationController = navigationController
         
@@ -27,8 +25,17 @@ public class SwiftUIDemoCoordinator: Coordinator {
     }
     
     public func start() {
-        let host = UIHostingController(rootView: ContentView())
+        let view = ContentView(coordinator: self)
+        let host = UIHostingController(rootView: view)
         navigationController.setViewControllers([host], animated: false)
+    }
+    
+    func onFlowFinish(_ completion: (() -> Void)? = nil) {
+        DispatchQueue.main.async {
+            self.navigationController.dismiss(animated: true, completion: {
+                self.parent?.childDidFinish(self)
+            })
+        }
     }
     
     

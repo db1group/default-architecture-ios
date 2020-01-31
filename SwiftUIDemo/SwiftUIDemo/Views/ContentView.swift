@@ -7,9 +7,17 @@
 //
 
 import SwiftUI
+import Core
 
 @available(iOS 13.0, *)
 struct ContentView: View {
+    
+    let parent: SwiftUIDemoCoordinator
+    
+    init(coordinator: SwiftUIDemoCoordinator) {
+        self.parent = coordinator
+    }
+    
     var body: some View {
         VStack {
             MapView()
@@ -34,13 +42,16 @@ struct ContentView: View {
             .padding()
             
             Spacer()
-        }
+            // Faz sentido?
+        }.onDisappear(perform: {
+            self.parent.onFlowFinish()
+        })
     }
 }
 
 @available(iOS 13.0, *)
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(coordinator: SwiftUIDemoCoordinator(navigationController: UINavigationController()))
     }
 }
