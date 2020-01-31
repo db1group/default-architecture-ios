@@ -24,7 +24,7 @@ target 'EnvironmentDescription' do
 end
 
 target 'SwiftUIDemo' do 
-  platform :ios, '11.0'
+  platform :ios, '11.0' # a plataforma mínima é 11.0 apenas para manter a compatibilidade com o projeto principal (Demo)
   project 'SwiftUIDemo/SwiftUIDemo.xcodeproj'
 end
 
