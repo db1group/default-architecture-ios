@@ -23,8 +23,8 @@
 		519F466923E20B89005B9F5B /* LocalStore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 519F466623E20B89005B9F5B /* LocalStore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		519F466A23E20B89005B9F5B /* Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 519F466723E20B89005B9F5B /* Networking.framework */; };
 		519F466B23E20B89005B9F5B /* Networking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 519F466723E20B89005B9F5B /* Networking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		51A0165A23E2212E003582E8 /* EnvironmentDescription.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51A0165923E2212E003582E8 /* EnvironmentDescription.framework */; };
-		51A0165B23E2212E003582E8 /* EnvironmentDescription.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 51A0165923E2212E003582E8 /* EnvironmentDescription.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		51A0168F23E3F3F9003582E8 /* EnvironmentDescription.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51A0165923E2212E003582E8 /* EnvironmentDescription.framework */; };
+		51A0169023E3F3F9003582E8 /* EnvironmentDescription.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 51A0165923E2212E003582E8 /* EnvironmentDescription.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		51F07E7923E1FB1700E1A1E8 /* TestBViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51F07E6E23E1FB1700E1A1E8 /* TestBViewController.storyboard */; };
 		51F07E7A23E1FB1700E1A1E8 /* TestBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F07E6F23E1FB1700E1A1E8 /* TestBViewController.swift */; };
 		51F07E7B23E1FB1700E1A1E8 /* TestAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F07E7123E1FB1700E1A1E8 /* TestAViewController.swift */; };
@@ -52,7 +52,7 @@
 			files = (
 				519F466B23E20B89005B9F5B /* Networking.framework in Embed Frameworks */,
 				519F466923E20B89005B9F5B /* LocalStore.framework in Embed Frameworks */,
-				51A0165B23E2212E003582E8 /* EnvironmentDescription.framework in Embed Frameworks */,
+				51A0169023E3F3F9003582E8 /* EnvironmentDescription.framework in Embed Frameworks */,
 				512B193123E1CB5700B0F803 /* Core.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -100,7 +100,7 @@
 				C0D9E6C9447163549B36FCDA /* libPods-Demo.a in Frameworks */,
 				519F466A23E20B89005B9F5B /* Networking.framework in Frameworks */,
 				512B193023E1CB5700B0F803 /* Core.framework in Frameworks */,
-				51A0165A23E2212E003582E8 /* EnvironmentDescription.framework in Frameworks */,
+				51A0168F23E3F3F9003582E8 /* EnvironmentDescription.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,6 +467,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_BUNDLE_ID)";
 				PRODUCT_NAME = Demo;
 				SWIFT_VERSION = 5.0;
@@ -626,6 +627,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_BUNDLE_ID)";
 				PRODUCT_NAME = Demo;
 				SWIFT_VERSION = 5.0;
@@ -646,6 +648,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "$(APP_BUNDLE_ID)";
 				PRODUCT_NAME = Demo;
 				SWIFT_VERSION = 5.0;

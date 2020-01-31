@@ -41,11 +41,11 @@ public class MainCoordinator: Coordinator {
         }
         
         viewController.onAddChildCoordinator = { [unowned self] in
-            if #available(iOS 13.0, *) {
-                self.goToSwiftUIDemo()
-            } else {
+//            if #available(iOS 13.0, *) {
+//                self.goToSwiftUIDemo()
+//            } else {
                 self.goToEnvironmentDescription()
-            }
+//            }
             
         }
     }
