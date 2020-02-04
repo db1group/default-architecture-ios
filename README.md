@@ -11,7 +11,7 @@ Dentre esses exemplos, temos:
 
 Em contrapartida, as libs criadas e disponíveis para importação, são:
 
-- [Core]: contém classes úteis, bem como o `[protocol]` para utilização dos **Coordinators**;
+- [Core]: contém classes úteis, bem como o [protocol] para utilização dos **Coordinators**;
 - [KeychainService]: agiliza o desenvolvimento quando houver necessidade de armazenar dados sensíveis no **Keychain**;
 - [LocalStore]: armazenamento no **CoreData**;
 - [Networking]: possui todas as responsabilidades de um **NetworkLayer**, para evitar a utilização de libs terceiras como o Alamofire;
