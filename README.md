@@ -49,12 +49,12 @@ Essa documentação tem como objetivo ajudá-lo em seus primeiros passos ou intr
 
 Se você está procurando algo específico, você pode ir direto para a seção relevante a partir daqui.
 
-1. [Estilo de código](#Estilo-de-código)
-1. [Começando](#Começando)
-1. [Arquitetura](#Arquitetura)
+1. [Estilo de código](#estilo-de-código)
+1. [Começando](#começando)
+1. [Arquitetura](#arquitetura)
 1. [Networking](#networking)
 1. [Assets](#assets)
-1. [Segurança](#Segurança)
+1. [Segurança](#segurança)
 1. [Analytics](#analytics)
 1. [Building](#building)
 1. [Deployment](#deployment)
