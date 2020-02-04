@@ -1,3 +1,37 @@
+# iOS Guidelines DB1
+
+## Introdução
+Com esse repositório, tivemos a intenção de fazer um compilado de exemplos e libs feitas por alguns de nossos desenvolvedores iOS afim de agilizar o desenvolvimento nativo e desmistificar certos conceitos.
+
+Dentre esses exemplos, temos:
+
+- Padrão de desenvolvimento com **Coordinators**;
+- Como modularizar as diversas features de um app em pequenos projetos ( `.xcodeproj` ) dentro de um único workspace ( `.xcworkspace` );
+- Incluir uma feature com **SwiftUI** mesmo com o projeto principal suportando um target mínimo iOS 11.0, por exemplo.
+
+Em contrapartida, as libs criadas e disponíveis para importação, são:
+
+- [Core]: contém classes úteis, bem como o `protocol` para utilização dos **Coordinators**;
+- [KeychainService]: agiliza o desenvolvimento quando houver necessidade de armazenar dados sensíveis no **Keychain**;
+- [LocalStore]: armazenamento no **CoreData**;
+- [Networking]: possui todas as responsabilidades de um **NetworkLayer**, para evitar a utilização de libs terceiras como o Alamofire;
+- [Resources]: traz classes de validação e extensões importantes e comuns que podem vir a ser úteis nos projetos.
+
+[Core]: /Core
+[KeychainService]: /KeychainService
+[LocalStore]: /LocalStore
+[Networking]: /Networking
+[Resources]: /Resources
+
+## SwiftUIDemo
+Aqui é mostrado que é possível adicionar uma feature ao projeto utilizando SwiftUI e os devidos cuidados com as condicionais.
+
+> É importante ressaltar, que encontramos o seguinte [erro] ao tentar rodar o app em dispositivos com iOS inferior ao 13.0. A solução foi a mesma da resposta citada no link anterior, segue imagem: ![](readme-images/erro-swiftui.png)
+
+[erro]: https://stackoverflow.com/questions/57907817/dyld-library-not-loaded-swiftui-when-app-runs-on-ios-12-using-availableios-13
+
+
+
 Boas práticas - iOS
 ==================
 
