@@ -150,10 +150,10 @@ Estas são as maneiras de notificar os componentes sobre o acontecimentos em um 
 
 ### Modelos
 
-Mantem seus modelos imutável, é utilizado para traduzir semântica e tipos de API para o app. Em Swift, você pode usar estruturas em vez de aulas para assegurar a imutabilidade, e usar uma biblioteca de análise, tais como [SwiftyJSON] [swiftyjson] ou [Argo] [argo] para fazer o mapeamento JSON-to-model.
+Mantem seus modelos imutável, é utilizado para traduzir semântica e tipos de API para o app. Em Swift, você pode usar estruturas em vez de classes para assegurar a imutabilidade, e usar uma biblioteca de análise, tais como [SwiftyJSON] ou [Argo] para fazer o mapeamento JSON-to-model.
 
-[swiftyjson]: https://github.com/SwiftyJSON/SwiftyJSON
-[argo]: https://github.com/thoughtbot/Argo
+[Swiftyjson]: https://github.com/SwiftyJSON/SwiftyJSON
+[Argo]: https://github.com/thoughtbot/Argo
 
 ### Views
 
