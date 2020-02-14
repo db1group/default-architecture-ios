@@ -156,9 +156,6 @@ extension UIImage {
             let filteredImage = UIImage(ciImage: output)
             return filteredImage
         }
-//        if let outputImage = filter.outputImage {
-//            return UIImage(ciImage: outputImage)
-//        }
         return nil
     }
 

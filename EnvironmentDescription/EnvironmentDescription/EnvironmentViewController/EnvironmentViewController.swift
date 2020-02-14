@@ -1,24 +1,34 @@
 //
-//  ViewController.swift
-//  Demo
+//  EnvironmentViewController.swift
+//  FeatureA
 //
-//  Created by Glauco Dantas Beserra  on 16/01/20.
-//  Copyright © 2020 Glauco Dantas Beserra . All rights reserved.
+//  Created by Glauco Dantas Beserra  on 29/01/20.
+//  Copyright © 2020 DB1 Global Software. All rights reserved.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class EnvironmentViewController: UIViewController {
 
+    // MARK: - Outlets
+    
     @IBOutlet private weak var appNameLabel: UILabel!
     @IBOutlet private weak var bundleIdentifierLabel: UILabel!
     @IBOutlet private weak var baseURLLabel: UILabel!
     @IBOutlet private weak var apiKeyLabel: UILabel!
     
+    // MARK: - Properties
+    
+    var onBackToHome: (() -> Void)?
+    
+    // MARK: - Life cycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         getEnvironmentValues()
     }
+    
+    // MARK: - Private Methods
     
     private func getEnvironmentValues() {
         appNameLabel.text = Environment.displayName
@@ -27,4 +37,10 @@ class ViewController: UIViewController {
         apiKeyLabel.text = Environment.apiKey
     }
     
+    // MARK: - Actions
+    
+    @IBAction func onBackToHomeTapped(_ sender: UIButton) {
+        onBackToHome?()
+    }
+
 }
