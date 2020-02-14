@@ -1,5 +1,13 @@
-workspace 'DB1-Guideline'
+workspace 'DB1-Guidelines'
 inhibit_all_warnings!
+
+# Adicionar o target para cada novo projeto adicionado ao workspace!
+
+# Properties
+
+def testing
+   pod 'Hippolyte'
+end
 
 # Application
 
@@ -8,10 +16,28 @@ target 'Demo' do
 	project 'Demo/Demo.xcodeproj'
 end
 
-# Adicionar o target para cada novo projeto adicionado ao workspace!
+# Features
 
-def testing
-   pod 'Hippolyte'
+target 'EnvironmentDescription' do 
+  platform :ios, '11.0'
+  project 'EnvironmentDescription/EnvironmentDescription.xcodeproj'
+end
+
+target 'SwiftUIDemo' do 
+  platform :ios, '11.0' # a plataforma mínima é 11.0 apenas para manter a compatibilidade com o projeto principal (Demo)
+  project 'SwiftUIDemo/SwiftUIDemo.xcodeproj'
+end
+
+# DB1 Libs
+
+target 'Core' do 
+  platform :ios, '11.0'
+  project 'Core/Core.xcodeproj'
+end
+
+target 'KeychainService' do
+  platform :ios, '11.0'
+  project 'KeychainService/KeychainService.xcodeproj'
 end
 
 target 'LocalStore' do
@@ -44,8 +70,4 @@ target 'Resources' do
      project 'Resources/Resources.xcodeproj'
    end
 end
-
-target 'KeychainService' do
-	platform :ios, '11.0'
-	project 'KeychainService/KeychainService.xcodeproj'
-end
+	

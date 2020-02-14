@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--TestB View Controller-->
+        <scene sceneID="OJk-As-g3W">
+            <objects>
+                <viewController storyboardIdentifier="TestBViewController" id="vHq-5I-8zG" customClass="TestBViewController" customModule="CoordinatorService" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Tp1-IS-bgr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gWs-ID-j0t">
+                                <rect key="frame" x="185" y="433" width="44" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="15"/>
+                                <state key="normal" title="Close">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="closeTapped:" destination="vHq-5I-8zG" eventType="touchUpInside" id="wxC-86-MAf"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="B View Controller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y4N-L9-42C">
+                                <rect key="frame" x="131" y="64" width="152" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="17"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="y4N-L9-42C" firstAttribute="centerX" secondItem="Tp1-IS-bgr" secondAttribute="centerX" id="I08-xP-w2b"/>
+                            <constraint firstItem="y4N-L9-42C" firstAttribute="top" secondItem="fDn-hl-B1H" secondAttribute="top" constant="20" id="RaC-tX-Upw"/>
+                            <constraint firstItem="gWs-ID-j0t" firstAttribute="centerX" secondItem="Tp1-IS-bgr" secondAttribute="centerX" id="Xxr-S9-gEe"/>
+                            <constraint firstItem="gWs-ID-j0t" firstAttribute="centerY" secondItem="Tp1-IS-bgr" secondAttribute="centerY" id="bcw-sO-nvw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fDn-hl-B1H"/>
+                    </view>
+                    <connections>
+                        <outlet property="closeButton" destination="gWs-ID-j0t" id="rVf-Ya-JCx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dd5-AE-Nm7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136" y="65"/>
+        </scene>
+    </scenes>
+</document>
