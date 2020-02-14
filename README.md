@@ -1,3 +1,32 @@
+﻿# iOS Guidelines DB1
+
+## Introdução
+Com esse repositório, tivemos a intenção de fazer um compilado de exemplos e libs feitas por alguns de nossos desenvolvedores iOS afim de agilizar o desenvolvimento nativo e desmistificar certos conceitos.
+
+Dentre esses exemplos, temos:
+
+- Padrão de desenvolvimento com [Coordinators];
+- Como modularizar as diversas features de um app em pequenos projetos (`.xcodeproj`) dentro de um único workspace (`.xcworkspace`);
+- Incluir uma feature com [SwiftUI] mesmo com o projeto principal suportando um target mínimo iOS 11.0, por exemplo.
+
+Em contrapartida, as libs criadas e disponíveis para importação, são:
+
+- [Core]: contém classes úteis, bem como o [protocol] para utilização dos **Coordinators**;
+- [KeychainService]: agiliza o desenvolvimento quando houver necessidade de armazenar dados sensíveis no **Keychain**;
+- [LocalStore]: armazenamento no **CoreData**;
+- [Networking]: possui todas as responsabilidades de um **NetworkLayer**, para evitar a utilização de libs terceiras como o Alamofire;
+- [Resources]: traz classes de validação e extensões importantes e comuns que podem vir a ser úteis nos projetos.
+
+[SwiftUI]: /SwiftUIDemo
+[Coordinators]: /Demo/Demo/MainCoordinator.swift
+[Core]: /Core
+[protocol]: /Core/Core/Coordinator.swift
+[KeychainService]: /KeychainService
+[LocalStore]: /LocalStore
+[Networking]: /Networking
+[Resources]: /Resources
+
+
 Boas práticas - iOS
 ==================
 
@@ -11,12 +40,12 @@ Essa documentação tem como objetivo ajudá-lo em seus primeiros passos ou intr
 
 Se você está procurando algo específico, você pode ir direto para a seção relevante a partir daqui.
 
-1. [Estilo de código](#Estilo-de-código)
-1. [Começando](#Começando)
-1. [Arquitetura](#Arquitetura)
+1. [Estilo de código](#estilo-de-código)
+1. [Começando](#começando)
+1. [Arquitetura](#arquitetura)
 1. [Networking](#networking)
 1. [Assets](#assets)
-1. [Segurança](#Segurança)
+1. [Segurança](#segurança)
 1. [Analytics](#analytics)
 1. [Building](#building)
 1. [Deployment](#deployment)
@@ -150,10 +179,10 @@ Estas são as maneiras de notificar os componentes sobre o acontecimentos em um 
 
 ### Modelos
 
-Mantem seus modelos imutável, é utilizado para traduzir semântica e tipos de API para o app. Em Swift, você pode usar estruturas em vez de aulas para assegurar a imutabilidade, e usar uma biblioteca de análise, tais como [SwiftyJSON] [swiftyjson] ou [Argo] [argo] para fazer o mapeamento JSON-to-model.
+Mantem seus modelos imutável, é utilizado para traduzir semântica e tipos de API para o app. Em Swift, você pode usar estruturas em vez de classes para assegurar a imutabilidade, e usar uma biblioteca de análise, tais como [SwiftyJSON] ou [Argo] para fazer o mapeamento JSON-to-model.
 
-[swiftyjson]: https://github.com/SwiftyJSON/SwiftyJSON
-[argo]: https://github.com/thoughtbot/Argo
+[Swiftyjson]: https://github.com/SwiftyJSON/SwiftyJSON
+[Argo]: https://github.com/thoughtbot/Argo
 
 ### Views
 
