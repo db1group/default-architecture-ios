@@ -15,6 +15,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         labelColor.textColor = UIColor.activeTextColor
+        labelColor.font = UIFont.opensansBold
+
     }
 
 
